@@ -3,7 +3,7 @@
 
     // Preloader 
     jQuery(window).on('load', function () {
-        $(".preloader").delay(1600).fadeOut("slow");
+        $(".preloader").delay(200).fadeOut("slow"); 
     });
     // sidebar
     $('.sidebar-btn2').on("click", function () {
