@@ -12,7 +12,7 @@
     --gray-color: #f7f7fd;
     --paragraph-color: #272727;
     // Theme Color
-    --theme-color: #06D889;
+    --theme-color: #4458dd;
 
     //Body Color
     --body-color: #eaf1f5;
@@ -370,7 +370,7 @@ video {
         color: #B5B5B5;
         display: inline-block;
         padding: 10px 40px;
-        border: 1px solid rgba(#06D889, 0.5);
+        border: 1px solid rgba(#4458dd, 0.5);
         position: relative;
         margin-bottom: 10px;
         &::after{
@@ -457,7 +457,7 @@ video {
         font-size: 110px;
         letter-spacing: 0.01em;
         text-transform: uppercase;      
-        color: rgba(#06D889, 0.03);
+        color: rgba(#4458dd, 0.03);
         width: 100%;
         position: absolute;
         left: 50%;
@@ -895,7 +895,7 @@ video {
                                 position: absolute;
                                 bottom: -1px;
                                 left: 0;
-                                background: linear-gradient(90deg, #fff, #06D889, #fff);
+                                background: linear-gradient(90deg, #fff, #4458dd, #fff);
                                 width: 100%;
                                 height: 1px;
                                 -webkit-transform: scaleX(0);
@@ -909,7 +909,7 @@ video {
                             @include lg-down-device{
                                 border-color: #525252;
                                 &::before {
-                                    background: linear-gradient(90deg, #525252, #06D889, #525252);
+                                    background: linear-gradient(90deg, #525252, #4458dd, #525252);
                                 }
                             }
 
@@ -2009,7 +2009,7 @@ video {
             }
             &::after{
                 content: '';
-                background-color: rgba(#06D889, 0.25);
+                background-color: rgba(#4458dd, 0.25);
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -3444,7 +3444,7 @@ video {
                     content: '';
                     height: 150%;
                     width: 280px;
-                    background-color: rgba(#06D889, 0.2);
+                    background-color: rgba(#4458dd, 0.2);
                     position: absolute;
                     top: -120px;
                     left: 50%;
@@ -4826,7 +4826,7 @@ video {
             position: relative;
             &::after{
                 content: '';
-                border: 1px solid rgba(#06D889, 0.15);
+                border: 1px solid rgba(#4458dd, 0.15);
                 position: absolute;
                 left: -15px;
                 top: 15px;
@@ -4959,7 +4959,7 @@ video {
             display: inline-block;
             &::after{
                 content: '';
-                border: 1px solid rgba(#06D889, 0.15);
+                border: 1px solid rgba(#4458dd, 0.15);
                 position: absolute;
                 right: -10px;
                 top: -10px;
@@ -5076,7 +5076,7 @@ video {
                     content: '';
                     height: 1px;
                     width: 100%;
-                    background: #06D889;
+                    background: #4458dd;
                     border-radius: 5px; 
                     position: absolute;
                     left: 0;
@@ -5514,7 +5514,7 @@ video {
             }
         }
         &.two{
-            background-image: url(../img/home-3/pricing-bg-32.png), linear-gradient(#06D889, #06D889);      
+            background-image: url(../img/home-3/pricing-bg-32.png), linear-gradient(#4458dd, #4458dd);      
             .pricing-top{
                 span{
                     color: var(--black-color2);   
@@ -6212,7 +6212,7 @@ video {
                 top: -13px;
                 height: 92%;
                 width: 106%;
-                border: 1px solid rgba(#06D889, 0.25);
+                border: 1px solid rgba(#4458dd, 0.25);
                 z-index: -1;
             }
             &::before{
@@ -6375,7 +6375,7 @@ video {
                 white-space: nowrap;
                 gap: 10px;
                 span{
-                    color: rgba(#06D889, 0.05);
+                    color: rgba(#4458dd, 0.05);
                 }
                 &:last-child{
                     display: none;
@@ -6425,7 +6425,7 @@ video {
         &:hover{
             .sl{
                 h2{
-                    -webkit-text-stroke: 1px rgba(#06D889, 0.2);        
+                    -webkit-text-stroke: 1px rgba(#4458dd, 0.2);        
                 }
             }
             .content{
@@ -6478,7 +6478,7 @@ video {
                         padding-right: 8px;
                         &::after{
                             content: '';
-                            background-color: rgba(#06D889, 0.15);
+                            background-color: rgba(#4458dd, 0.15);
                             position: absolute;
                             left: 0;
                             top: 50%;
@@ -7786,7 +7786,7 @@ footer{
             }
             &::after{
                 content: '';
-                background-color: rgba(#06D889, 0.1);
+                background-color: rgba(#4458dd, 0.1);
                 position: absolute;
                 height: 160px;
                 width: 160px;
@@ -8486,7 +8486,7 @@ footer{
         &:hover{
             .sl{
                 h2{
-                    -webkit-text-stroke: 1px rgba(#06D889, 0.2);        
+                    -webkit-text-stroke: 1px rgba(#4458dd, 0.2);        
                 }
             }
             .content{
@@ -8594,7 +8594,7 @@ footer{
                     color: var(--white-color);
                     transition: 0.5s;
                     &:hover{
-                        color: rgba(#06D889, 0.5);
+                        color: rgba(#4458dd, 0.5);
                     }
                 }
             }
@@ -8799,7 +8799,7 @@ footer{
                 display: inline-block;
                 padding: 8px 40px;
                 position: relative;
-                background-color: rgba(#06D889, 0.2);
+                background-color: rgba(#4458dd, 0.2);
                 margin-bottom: 10px;
                 &::after{
                     content: '';
@@ -9839,7 +9839,7 @@ footer{
             font-size: 18px;
             text-transform: capitalize;
             color: var(--theme-color);       
-            border: 1px solid rgba(#06D889, 0.3);            
+            border: 1px solid rgba(#4458dd, 0.3);            
             border-radius: 5px;
             padding: 5px 22px;
             display: inline-block;
@@ -10082,7 +10082,7 @@ footer{
                             transition: 0.5s;
                             &:hover{
                                 color: var(--theme-color);
-                                border: 1px solid rgba(#06D889, 0.1);
+                                border: 1px solid rgba(#4458dd, 0.1);
                             }
                         }
                     }
@@ -10289,7 +10289,7 @@ footer{
             transition: 0.5s;     
             &:hover{
                 color: var(--theme-color);
-                border: 1px solid rgba(6, 216, 137, 0.1);       
+                border: 1px solid rgba(0, 86, 137, 0.1);       
             } 
         }
     }
@@ -10304,7 +10304,7 @@ footer{
         text-transform: capitalize;
         color: var(--white-color);
         margin-bottom: 0;
-        border-bottom: 2px solid rgba(#06D889, 0.4);
+        border-bottom: 2px solid rgba(#4458dd, 0.4);
         display: inline-block;
         padding-bottom: 5px;
         margin-bottom: 50px;
@@ -10363,7 +10363,7 @@ footer{
                         font-size: 16px;
                         letter-spacing: 0.03em;
                         color: #FFFFFF;   
-                        border: 1px solid rgba(#06D889, 0.3);
+                        border: 1px solid rgba(#4458dd, 0.3);
                         border-radius: 152px;    
                         padding: 7px 30px;   
                         display: flex;   
@@ -10396,7 +10396,7 @@ footer{
         text-transform: capitalize;
         color: var(--white-color);
         margin-bottom: 0;
-        border-bottom: 2px solid rgba(#06D889, 0.4);
+        border-bottom: 2px solid rgba(#4458dd, 0.4);
         display: inline-block;
         padding-bottom: 5px;
         margin-bottom: 50px;
