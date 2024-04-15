@@ -4905,7 +4905,7 @@ video {
                 padding: 0;
                 list-style: none;
                 padding-top: 30px;
-                columns: 2;
+                columns: 4;
                 @include sm-down-device(){
                     columns: 1;
                 }

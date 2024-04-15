@@ -1703,6 +1703,10 @@ video {
 @media (max-width: 767px) {
   .banner-area3 .banner-wrapper {
     padding: 180px 20px 115px 20px;
+
+    .magnetic-item {
+      display: none;
+    }
   }
 }
 .banner-area3 .banner-wrapper .banner-content {
@@ -4648,6 +4652,47 @@ video {
   color: var(--white-color);
 }
 
+.home3-cta-section {
+  background-color: var(--theme-color);
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .section-title-3 {
+    max-width: unset;
+  }
+
+  .decorative {
+    z-index: 0;
+    object-fit: cover;
+    object-position: 100% 50%;
+    width: 40rem;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+  }
+
+  .primary-btn {
+    font-family: var(--font-saira);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: var(--black-color2);
+    border-radius: 5px;
+    background-color: var(--white-color);
+    padding: 14px 26px;
+    display: inline-block;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+}
+
 .home3-solution-section .solution-card {
   background-image: url(../img/home-3/pricing-bg-32.png), linear-gradient(#1E1E1E, #1E1E1E);
   background-size: cover;
@@ -4722,32 +4767,7 @@ video {
 .home3-solution-section .solution-card:hover {
   background-image: url(../img/home-3/pricing-bg-32.png), linear-gradient(rgba(117, 218, 180, 0.1), rgba(117, 218, 180, 0.1));
 }
-
-.home3-about-section {
-  padding: 0px 13%;
-}
-@media (max-width: 1700px) {
-  .home3-about-section {
-    padding: 0px 10%;
-  }
-}
-@media (min-width: 1400px) and (max-width: 1599px) {
-  .home3-about-section {
-    padding: 0px 5%;
-  }
-}
-@media (max-width: 1399px) {
-  .home3-about-section {
-    padding: 0px 4%;
-  }
-}
-@media (max-width: 1199px) {
-  .home3-about-section {
-    padding: 0px 2%;
-  }
-}
 .home3-about-section .section-title-3 {
-  padding-left: 50px;
   margin-bottom: 80px;
 }
 @media (max-width: 576px) {
@@ -4760,7 +4780,6 @@ video {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding-left: 50px;
 }
 @media (max-width: 1399px) {
   .home3-about-section .about-left {
@@ -4771,6 +4790,7 @@ video {
   .home3-about-section .about-left {
     flex-wrap: wrap;
     gap: 40px;
+    padding-left: 0;
   }
 }
 .home3-about-section .about-left .about-img {
@@ -4870,7 +4890,8 @@ video {
   }
 }
 .home3-about-section .about-left .about-content .about-feature li {
-  text-align: center;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 @media (max-width: 576px) {
   .home3-about-section .about-left .about-content .about-feature li {
@@ -5531,10 +5552,6 @@ video {
 }
 
 .home3-contact-area {
-  background-image: url(../img/home-3/home3-contact-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   overflow: hidden;
   min-height: 575px;
   position: relative;
@@ -7385,7 +7402,6 @@ footer .footer-widget .menu-container ul li a:hover {
 }
 footer .footer-btm {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  margin-top: 80px;
 }
 footer .footer-btm .footer-btn-content {
   display: flex;
