@@ -28,7 +28,7 @@ navSlide();
      mobile-drop-down
 --------------------------------------------- */
 
-$(".main-nav2 .bi").on('click', function (event) {
+$(".main-nav2 .bi").on('click', function () {
   var $fl = $(this);
   $(this).parent().siblings().find('.sub-menu').slideUp();
   $(this).parent().siblings().find('.bi').addClass('bi-plus-lg');

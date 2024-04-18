@@ -2,7 +2,7 @@
 interface Props {
   title: string;
 }
-
+import SpeedInsights from '@vercel/speed-insights/astro';
 const { title } = Astro.props;
 ---
 
@@ -59,6 +59,7 @@ const { title } = Astro.props;
       type="image/gif"
       sizes="20x20"
     />
+    <SpeedInsights />
   </head>
   <body class="home-dark2 tt-magic-cursor">
     <!-- Google Tag Manager (noscript) -->

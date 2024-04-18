@@ -14,6 +14,12 @@ dependencies:
   '@astrojs/vercel':
     specifier: ^7.5.3
     version: 7.5.3(astro@4.6.1)
+  '@vercel/analytics':
+    specifier: ^1.2.2
+    version: 1.2.2
+  '@vercel/speed-insights':
+    specifier: ^1.0.10
+    version: 1.0.10
   astro:
     specifier: ^4.6.1
     version: 4.6.1(typescript@5.4.5)
@@ -1375,6 +1381,31 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
+    dev: false
+
+  /@vercel/speed-insights@1.0.10:
+    resolution: {integrity: sha512-4uzdKB0RW6Ff2FkzshzjZ+RlJfLPxgm/00i0XXgxfMPhwnnsk92YgtqsxT9OcPLdJUyVU1DqFlSWWjIQMPkh0g==}
+    requiresBuild: true
+    peerDependencies:
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      react: ^18 || ^19
+      svelte: ^4
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
     dev: false
 
   /@volar/kit@2.1.6(typescript@5.4.5):
