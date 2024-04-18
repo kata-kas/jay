@@ -1,5 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import ConeImage from "assets/img/home-3/cone.webp";
+import DonutImage from "assets/img/home-3/donut.webp";
+import GridImage from "assets/img/home-3/ilust-grids.webp";
 ---
 
 <Layout title="Jay - Software Agency and creative IT solutions">
@@ -32,16 +36,16 @@ import Layout from "../layouts/Layout.astro";
       <div class="social-area">
         <ul>
           <li>
-            <a href="https://www.facebook.com/jaysoftwarero/"
+            <a href="https://www.facebook.com/jaysoftwarero/" aria-label="Facebook"
               ><i class="bx bxl-facebook"></i></a>
           </li>
           <li>
-            <a href="https://ro.linkedin.com/company/jaysoftware"
+            <a href="https://ro.linkedin.com/company/jaysoftware" aria-label="LinkedIn"
               ><i class="bx bxl-linkedin"></i></a
             >
           </li>
           <li>
-            <a href="https://www.instagram.com/jay_software/"
+            <a href="https://www.instagram.com/jay_software/" aria-label="Instagram"
               ><i class="bx bxl-instagram"></i></a>
           </li>
         </ul>
@@ -73,10 +77,10 @@ import Layout from "../layouts/Layout.astro";
             </div>
           </div>
           <div class="magnetic-item">
-            <img class="img-fluid" src="assets/img/home-3/cone.webp" alt="" />
+            <Image class="img-fluid" src={ConeImage} alt="" loading="eager" />
           </div>
           <div class="magnetic-item">
-            <img class="img-fluid" src="assets/img/home-3/donut.webp" alt="" />
+            <Image class="img-fluid" src={DonutImage} alt="" loading="eager" />
           </div>
         </div>
       </div>
@@ -154,7 +158,7 @@ import Layout from "../layouts/Layout.astro";
             class="col-lg-12 d-flex align-items-center justify-content-between gap-4 flex-wrap"
           >
             <div class="section-title-3">
-              <h2>Our Software Development Services</h2>
+              <h2 aria-label="Our Software Development Services">Our Software Development Services</h2>
               <p>
                 Below, you'll discover a comprehensive list of solutions we
                 offer as your trusted development partner.
@@ -352,7 +356,7 @@ import Layout from "../layouts/Layout.astro";
               data-wow-delay="200ms"
               data-wow-duration="1500ms"
             >
-              <h2>Our Approach</h2>
+              <h2 aria-label="Our Approach">Our Approach</h2>
             </div>
             <div class="about-left">
               <div
@@ -363,34 +367,33 @@ import Layout from "../layouts/Layout.astro";
                 <div class="devider"></div>
                 <ul class="about-feature">
                   <li>
-                    <h5>1. Discover & Define</h5>
+                    <h5 aria-label="Discover & Define">1. Discover & Define</h5>
                     <p>
-                      A mapping of all the flows of the platform is carried out,
-                      to analyze and evaluate the complexity and determinate
-                      possible solutions that can be given to our problem.
+                      A mapping of all the flows of the platform is carried out, to analyze and
+                      evaluate the complexity and determinate possible solutions that can be
+                      given to our problem.
                     </p>
                   </li>
                   <li>
-                    <h5>2. Conceptualize</h5>
+                    <h5 aria-label="Conceptualize">2. Conceptualize</h5>
                     <p>
-                      Ideation of visual solutions for evaluated flows, also
-                      with rapid prototyping to test the effectiveness of these
-                      solutions. Raise front-end impact if necessary.
+                      Ideation of visual solutions for evaluated flows, also with rapid
+                      prototyping to test the effectiveness of these solutions. Raise front-end
+                      impact if necessary.
                     </p>
                   </li>
                   <li>
-                    <h5>3. Build</h5>
+                    <h5 aria-label="Build">3. Build</h5>
                     <p>
-                      Implement the product solutions, optimize your systems and
-                      increase the engagement of your platform.
+                      Implement the product solutions, optimize your systems and increase the
+                      engagement of your platform.
                     </p>
                   </li>
                   <li>
-                    <h5>4. Maintain</h5>
+                    <h5 aria-label="Maintain">4. Maintain</h5>
                     <p>
-                      Efficiently maintain and continuously improve your digital
-                      product to ensure ROI and ongoing value for your
-                      customers.
+                      Efficiently maintain and continuously improve your digital product to
+                      ensure ROI and ongoing value for your customers.
                     </p>
                   </li>
                 </ul>
@@ -408,7 +411,7 @@ import Layout from "../layouts/Layout.astro";
         <div class="row">
           <div class="col-lg-9">
             <div class="section-title-3 wow animate fadeInUp">
-              <h2>
+              <h2 aria-label="We serve as your dedicated SWAT team, enhancing new ideas & existing products into customized, polished, and scalable solutions">
                 We serve as your dedicated SWAT team, enhancing new ideas &
                 existing products into customized, polished, and scalable
                 solutions
@@ -432,9 +435,10 @@ import Layout from "../layouts/Layout.astro";
                 </svg>
               </a>
             </div>
-            <img
+            <Image
               class="img-fluid magnetic-item decorative"
-              src="assets/img/home-3/ilust-grids.webp"
+              src={GridImage}
+              loading="eager"
               alt=""
             />
           </div>
@@ -462,22 +466,19 @@ import Layout from "../layouts/Layout.astro";
               </div>
               <div class="contact-page-wrap sec-mar">
                 <div class="container">
-                  <div class="row g-lg-4 gy-5">
+                  <div class="row g-lg-4 gy-5 justify-center">
                     <div class="col-lg-12">
                       <div class="contact-content">
                         <h2>
-                          Let's discuss your digital product <br /> ideas and needs!
+                          Get in touch
                         </h2>
                       </div>
                     </div>
-                    <div id="contact" class="col-lg-12">
+                    <div id="contact" class="col-lg-6">
                       <div class="contact-form-wrap">
                         <div class="form-tltle">
                           <h5>
-                            Would you like to know what we could do for you?
-                            Fill out the form and we'll get back to you. No
-                            obligations, no annoying high pressure sales
-                            tactics. We won't waste your time.
+                            Let's talk about building a team that scales to your growth, speeds up your software delivery and matches your culture.
                           </h5>
                         </div>
                         <div class="contact-form">
@@ -486,35 +487,16 @@ import Layout from "../layouts/Layout.astro";
                             method="POST"
                           >
                             <div class="row">
-                              <div class="col-md-6 mb-20">
+                              <div class="col-lg-12 mb-20">
                                 <div class="form-inner">
-                                  <label>name</label>
-                                  <input type="text" name="name" />
-                                </div>
-                              </div>
-                              <div class="col-lg-6 mb-20">
-                                <div class="form-inner">
-                                  <label>Email</label>
-                                  <input type="email" name="email" />
-                                </div>
-                              </div>
-                              <div class="col-lg-6 mb-20">
-                                <div class="form-inner">
-                                  <label>Company/Organization</label>
-                                  <input type="text" name="organization" />
-                                </div>
-                              </div>
-
-                              <div class="col-lg-6 mb-20">
-                                <div class="form-inner">
-                                  <label>Phone</label>
-                                  <input type="tel" name="phone" />
+                                  <label for="email">Email</label>
+                                  <input type="email" name="email" id="email"/>
                                 </div>
                               </div>
                               <div class="col-lg-12 mb-20">
                                 <div class="form-inner">
-                                  <label>What would you like to build?</label>
-                                  <textarea name="message"></textarea>
+                                  <label for="message">Message</label>
+                                  <textarea name="message" id="message"></textarea>
                                 </div>
                               </div>
                               <div class="col-lg-12">
