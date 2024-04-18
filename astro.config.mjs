@@ -11,6 +11,7 @@ export default defineConfig({
     },
     imagesConfig: {
       sizes: [320, 640, 1280],
+      domains: ["jay-software.com"],
     },
     imageService: true,
     isr: {
