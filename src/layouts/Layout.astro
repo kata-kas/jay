@@ -2,7 +2,7 @@
 interface Props {
   title: string;
 }
-import SpeedInsights from '@vercel/speed-insights/astro';
+import SpeedInsights from "@vercel/speed-insights/astro";
 const { title } = Astro.props;
 ---
 
@@ -30,6 +30,23 @@ const { title } = Astro.props;
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Jay Software - Custom Software Solutions" />
+    <meta property="og:description" content="We specialize in providing custom software solutions tailored to your business needs." />
+    <meta property="og:image" content="/assets/img/jay-logo.svg" />
+    <meta property="og:url" content="https://jay-software.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Jay Software" />
+
+      <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="/assets/img/jay-logo.svg" />
+    <meta name="twitter:site" content="@jay-software" />
+    <meta name="twitter:title" content="Jay Software - Custom Software Solutions" />
+    <meta name="twitter:description" content="We specialize in providing custom software solutions tailored to your business needs." />
+    <meta name="twitter:image" content="/assets/img/jay-logo.svg" />
+
 
     <!-- Bootstrap CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -101,7 +118,7 @@ const { title } = Astro.props;
         >
           <div class="mobile-logo-wrap">
             <a href="index.html">
-				<img alt="logo" src="assets/img/jay-logo.svg" />
+              <img alt="logo" src="assets/img/jay-logo.svg" />
             </a>
           </div>
         </div>
@@ -109,7 +126,7 @@ const { title } = Astro.props;
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
-		  <li><a href="/blog">Blog</a></li>
+          <li><a href="/blog">Blog</a></li>
         </ul>
         <div class="d-lg-none d-block">
           <form class="mobile-menu-form">
@@ -135,7 +152,7 @@ const { title } = Astro.props;
                   </path>
                 </svg>
               </div> -->
-              <!-- <div class="hotline-info">
+            <!-- <div class="hotline-info">
                 <span>Call Us Now</span>
                 <h6><a href="tel:29658718617">2-965-871-8617</a></h6>
               </div>
@@ -159,7 +176,9 @@ const { title } = Astro.props;
               <div class="email-info">
                 <span>Email Now</span>
                 <h6>
-                  <a href="mailto:catalin.casuneanu@jay-software.com">catalin.casuneanu@jay-software.com</a>
+                  <a href="mailto:catalin.casuneanu@jay-software.com"
+                    >catalin.casuneanu@jay-software.com</a
+                  >
                 </h6>
               </div>
             </div>
@@ -192,18 +211,24 @@ const { title } = Astro.props;
                 <div class="footer-social">
                   <ul>
                     <li>
-                      <a href="https://www.facebook.com/jaysoftwarero/" aria-label="Facebook" target="_blank"
-                        ><i class="bx bxl-facebook"></i></a
+                      <a
+                        href="https://www.facebook.com/jaysoftwarero/"
+                        aria-label="Facebook"
+                        target="_blank"><i class="bx bxl-facebook"></i></a
                       >
                     </li>
                     <li>
-                      <a href="https://ro.linkedin.com/company/jaysoftware" aria-label="LinkedIn" target="_blank"
-                        ><i class="bx bxl-linkedin"></i></a
+                      <a
+                        href="https://ro.linkedin.com/company/jaysoftware"
+                        aria-label="LinkedIn"
+                        target="_blank"><i class="bx bxl-linkedin"></i></a
                       >
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/jay_software/" aria-label="Instagram" target="_blank"
-                        ><i class="bx bxl-instagram"></i></a
+                      <a
+                        href="https://www.instagram.com/jay_software/"
+                        aria-label="Instagram"
+                        target="_blank"><i class="bx bxl-instagram"></i></a
                       >
                     </li>
                   </ul>
