@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets';
+const { imgSrc } = Astro.props;
+const { alt } = Astro.props;
+---
+<Image
+    class="brightness-50 hover:brightness-200 ease-in-out duration-300"
+    src={imgSrc}
+    height={96}
+    width={200}
+    alt={alt}
+/>

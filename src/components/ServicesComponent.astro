@@ -1,0 +1,112 @@
+---
+import { Image } from 'astro:assets';
+
+import WebApplicationsIcon from "assets/img/services/web_applications.svg";
+import CustomSoftwareIcon from "assets/img/services/custom_software.svg";
+import SystemsIntegrationsIcon from "assets/img/services/systems_integration.svg";
+import MobileApplicationsIcon from "assets/img/services/mobile_applications.svg";
+import DevopsIcon from "assets/img/services/devops.svg";
+import AIMLIcon from "assets/img/services/aiml.svg";
+---
+<section class="bg-gray-900 text-white">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+      <div class="mx-auto max-w-lg text-center">
+        <h2 class="text-3xl font-bold sm:text-4xl">Our Software Development Services</h2>
+  
+        <p class="mt-4 text-gray-300">
+            Below, you'll discover a comprehensive list of solutions we offer as your trusted development partner.
+        </p>
+      </div>
+  
+      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <a
+          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+          href="#"
+        >
+          <Image src={WebApplicationsIcon} alt="Web Applications Development Icon" />
+  
+          <h2 class="mt-4 text-xl font-bold text-white">Web Applications</h2>
+  
+          <p class="mt-1 text-sm text-gray-300">
+            Dynamic web applications designed to enhance user experience and meet business objectives.
+          </p>
+        </a>
+  
+        <a
+          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+          href="#"
+        >
+            <Image src={CustomSoftwareIcon} alt="Custom Software Development Icon" />
+          <h2 class="mt-4 text-xl font-bold text-white">Custom Software</h2>
+  
+          <p class="mt-1 text-sm text-gray-300">
+            Deploy your Minimum Viable Product (MVP), streamline
+                        your systems, or elevate your digital product to new
+                        heights. We deliver on time.
+          </p>
+        </a>
+  
+        <a
+          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+          href="#"
+        >
+            <Image src={SystemsIntegrationsIcon} alt="Systems Integrations Icon" />
+  
+          <h2 class="mt-4 text-xl font-bold text-white">System integrations</h2>
+  
+          <p class="mt-1 text-sm text-gray-300">
+            Integrate diverse platforms smoothly; achieve unified
+                        operations and enhanced efficiency with us.
+          </p>
+        </a>
+  
+        <a
+          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+          href="#"
+        >
+        <Image src={MobileApplicationsIcon} alt="Mobile Applications Icon" />
+  
+          <h2 class="mt-4 text-xl font-bold text-white">Mobile Solutions</h2>
+  
+          <p class="mt-1 text-sm text-gray-300">
+            Go mobile to better interact with your target audience, automate and optimize daily operations, unlock new revenue streams and make most out of what native or hybrid mobile applications can offer
+          </p>
+        </a>
+
+        <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+        href="#"
+        >
+        <Image src={DevopsIcon} alt="Devops Icon" />
+
+            <h2 class="mt-4 text-xl font-bold text-white">DevOps</h2>
+
+            <p class="mt-1 text-sm text-gray-300">
+                Analysis of the existing release processes and systems, automation, development of systems and tools, and release execution.
+            </p>
+        </a>
+
+        <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+        href="#"
+        >
+        <Image src={AIMLIcon} alt="Artificial Intelligence & ML Icon" />
+
+            <h2 class="mt-4 text-xl font-bold text-white">Artificial Intelligence & ML</h2>
+
+            <p class="mt-1 text-sm text-gray-300">
+                Leverage the power of AI & ML to make your business smarter and more efficient
+            </p>
+        </a>
+      </div>
+  
+      <div class="mt-12 text-center">
+        <a
+          href="#"
+          class="inline-block rounded bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring focus:ring-yellow-400"
+        >
+          Get Started Today
+        </a>
+      </div>
+    </div>
+  </section>

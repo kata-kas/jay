@@ -1,9 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from 'astro:assets';
+import MarqueeComponent from "../components/MarqueeComponent.astro";
+import MarqueeItemComponent from "../components/MarqueeItemComponent.astro";
+import ServicesComponent from "../components/ServicesComponent.astro";
+
 import ConeImage from "assets/img/home-3/cone.webp";
 import DonutImage from "assets/img/home-3/donut.webp";
 import GridImage from "assets/img/home-3/ilust-grids.webp";
+import StarImage from "assets/img/home-3/star.svg";
+import CirkusLogo from "assets/img/partners/cirkus-logo.svg";
+import BMWLogo from "assets/img/partners/bmw-group.svg";
+import PluriaLogo from "assets/img/partners/logo-pluria.svg";
+import WebChainLogo from "assets/img/partners/logo_webchain_transparent_alb.png";
+import BrightPinkLogo from "assets/img/partners/bright-se-logo.svg";
+import Go1Logo from "assets/img/partners/go-1-logo.svg";
+import JBALogo from "assets/img/partners/jba-group-logo.svg";
+
 ---
 
 <Layout title="Jay - Software Agency and creative IT solutions">
@@ -76,10 +89,10 @@ import GridImage from "assets/img/home-3/ilust-grids.webp";
               </a>
             </div>
           </div>
-          <div class="magnetic-item">
+          <div>
             <Image class="img-fluid  hidden lg:block" src={ConeImage} height={500} width={500} alt="" loading="eager" />
           </div>
-          <div class="magnetic-item">
+          <div>
             <Image class="img-fluid  hidden lg:block" src={DonutImage} height={500} width={500} alt="" loading="eager" />
           </div>
         </div>
@@ -89,261 +102,61 @@ import GridImage from "assets/img/home-3/ilust-grids.webp";
     <!-- Start Partner section -->
     <div class="home3-partner-area" id="home3-partner-area">
       <div class="container-fluid">
-        <div class="row g-4">
-          <div class="col-lg-3">
-            <div class="partner-title">
-              <h3>Our Collaborators</h3>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_10px_3fr] gap-2">
+          <div class="flex items-center font-saira font-semibold text-5xl leading-10 capitalize text-white mb-0 max-w-250 w-full">
+            <h3>Our Collaborators</h3>
           </div>
-          <div class="col-lg-9">
-            <div class="partner-wrapper">
-              <div class="marquee_text">
-                <img
-                  src="assets/img/partners/cirkus-logo.svg"
-                  style="height: 96px; width: 200px"
-                  alt=""
-                />
-                <img src="assets/img/home-3/star.svg" alt="" />
-                <img
-                  src="assets/img/partners/bmw-group.svg"
-                  style="height: 96px; width: 200px"
-                  alt=""
-                />
-                <img src="assets/img/home-3/star.svg" alt="" />
-                <img
-                  src="assets/img/partners/logo-pluria.svg"
-                  style="height: 96px; width: 200px"
-                  alt=""
-                />
-                <img src="assets/img/home-3/star.svg" alt="" />
-                <img
-                  src="assets/img/partners/logo_webchain_transparent_alb.png"
-                  style="height: 96px; width: 200px"
-                  alt=""
-                />
-                <img src="assets/img/home-3/star.svg" alt="" />
-                <img
-                  src="assets/img/partners/bright-se-logo.svg"
-                  style="height: 96px; width: 200px"
-                  alt=""
-                />
-                <img src="assets/img/home-3/star.svg" alt="" />
-                <img
-                  src="assets/img/partners/go-1-logo.svg"
-                  style="height: 96px; width: 200px"
-                  alt=""
-                />
-                <img src="assets/img/home-3/star.svg" alt="" />
-                <img
-                  src="assets/img/partners/jba-group-logo.svg"
-                  style="height: 96px; width: 200px"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
+          <span class="h-full w-1 bg-opacity-10 bg-white"></span>
+           <MarqueeComponent>
+            <MarqueeItemComponent imgSrc={CirkusLogo} alt="Cirkus | Task Management Software" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={BMWLogo} alt="BMWGroup | Automotive Industry" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={PluriaLogo} alt="Pluria | Coworking Management Software" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={WebChainLogo} alt="Webchain | Outsourcing Industry" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={BrightPinkLogo} alt="Bright Pink Agency | Marketing Agency" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={Go1Logo} alt="Go1 | Learning Platform" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={JBALogo} alt="JBA | Mapping and Flood Risk Management" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={CirkusLogo} alt="Cirkus | Task Management Software" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={BMWLogo} alt="BMWGroup | Automotive Industry" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={PluriaLogo} alt="Pluria | Coworking Management Software" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={WebChainLogo} alt="Webchain | Outsourcing Industry" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={BrightPinkLogo} alt="Bright Pink Agency | Marketing Agency" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={Go1Logo} alt="Go1 | Learning Platform" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={JBALogo} alt="JBA | Mapping and Flood Risk Management" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={CirkusLogo} alt="Cirkus | Task Management Software" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={BMWLogo} alt="BMWGroup | Automotive Industry" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={PluriaLogo} alt="Pluria | Coworking Management Software" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={WebChainLogo} alt="Webchain | Outsourcing Industry" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={BrightPinkLogo} alt="Bright Pink Agency | Marketing Agency" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={Go1Logo} alt="Go1 | Learning Platform" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+            <MarqueeItemComponent imgSrc={JBALogo} alt="JBA | Mapping and Flood Risk Management" />
+            <MarqueeItemComponent imgSrc={StarImage} alt="" />
+          <MarqueeComponent>
         </div>
       </div>
     </div>
     <!-- End Partner section -->
     <!-- Start Solution Section -->
-    <div class="home3-solution-section sec-mar" id="services">
-      <div class="container">
-        <div
-          class="row mb-55 wow animate fadeInUp"
-          data-wow-delay="200ms"
-          data-wow-duration="1500ms"
-        >
-          <div
-            class="col-lg-12 d-flex align-items-center justify-content-between gap-4 flex-wrap"
-          >
-            <div class="section-title-3">
-              <h2 aria-label="Our Software Development Services">Our Software Development Services</h2>
-              <p>
-                Below, you'll discover a comprehensive list of solutions we
-                offer as your trusted development partner.
-              </p>
-            </div>
-            <div class="swiper-btn-group">
-              <div class="swiper-btn prevbtn1">
-                <i class="bi bi-arrow-left"></i>
-              </div>
-              <div class="swiper-btn nextbtn1">
-                <i class="bi bi-arrow-right"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="swiper home3-solution-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="solution-card">
-                    <div class="icon">
-                      <svg
-                        width="60"
-                        height="60"
-                        viewBox="0 0 60 60"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M30.8811 26.0261C30.8811 28.7076 28.7073 30.8814 26.0258 30.8814C23.3443 30.8814 21.1705 28.7076 21.1705 26.0261C21.1705 23.3446 23.3443 21.1708 26.0258 21.1708C28.7073 21.1708 30.8811 23.3446 30.8811 26.0261ZM29.4245 26.0261C29.4245 27.9032 27.9029 29.4248 26.0258 29.4248C24.1488 29.4248 22.6271 27.9032 22.6271 26.0261C22.6271 24.1491 24.1488 22.6274 26.0258 22.6274C27.9029 22.6274 29.4245 24.1491 29.4245 26.0261Z"
-                        >
-                        </path>
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M26.0319 33.6793C30.2552 33.6793 33.6789 30.2555 33.6789 26.0322C33.6789 21.8088 30.2552 18.3851 26.0319 18.3851C21.8085 18.3851 18.3848 21.8088 18.3848 26.0322C18.3848 30.2555 21.8085 33.6793 26.0319 33.6793ZM26.0319 32.2227C29.4508 32.2227 32.2224 29.4511 32.2224 26.0322C32.2224 22.6133 29.4508 19.8417 26.0319 19.8417C22.613 19.8417 19.8414 22.6133 19.8414 26.0322C19.8414 29.4511 22.613 32.2227 26.0319 32.2227Z"
-                        >
-                        </path>
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M36.3554 25.9776C36.3554 31.7093 31.709 36.3557 25.9773 36.3557C20.2456 36.3557 15.5991 31.7093 15.5991 25.9776C15.5991 20.2459 20.2456 15.5994 25.9773 15.5994C31.709 15.5994 36.3554 20.2459 36.3554 25.9776ZM34.8988 25.9776C34.8988 30.9048 30.9045 34.8991 25.9773 34.8991C21.05 34.8991 17.0557 30.9048 17.0557 25.9776C17.0557 21.0503 21.05 17.056 25.9773 17.056C30.9045 17.056 34.8988 21.0503 34.8988 25.9776Z"
-                        >
-                        </path>
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M25.9226 39.0322C33.1627 39.0322 39.0319 33.163 39.0319 25.9229C39.0319 18.6829 33.1627 12.8137 25.9226 12.8137C18.6826 12.8137 12.8134 18.6829 12.8134 25.9229C12.8134 33.163 18.6826 39.0322 25.9226 39.0322ZM25.9226 37.5756C32.3582 37.5756 37.5753 32.3585 37.5753 25.9229C37.5753 19.4873 32.3582 14.2703 25.9226 14.2703C19.4871 14.2703 14.27 19.4873 14.27 25.9229C14.27 32.3585 19.4871 37.5756 25.9226 37.5756Z"
-                        >
-                        </path>
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M41.7727 25.9933C41.7727 34.7082 34.708 41.773 25.9931 41.773C17.2782 41.773 10.2134 34.7082 10.2134 25.9933C10.2134 17.2785 17.2782 10.2137 25.9931 10.2137C34.708 10.2137 41.7727 17.2785 41.7727 25.9933ZM40.3162 25.9933C40.3162 33.9037 33.9035 40.3164 25.9931 40.3164C18.0827 40.3164 11.67 33.9037 11.67 25.9933C11.67 18.0829 18.0827 11.6703 25.9931 11.6703C33.9035 11.6703 40.3162 18.0829 40.3162 25.9933Z"
-                        >
-                        </path>
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M44.5706 25.9994C44.5706 36.2561 36.2559 44.5708 25.9992 44.5708C15.7424 44.5708 7.42773 36.2561 7.42773 25.9994C7.42773 15.7427 15.7424 7.42798 25.9992 7.42798C36.2559 7.42798 44.5706 15.7427 44.5706 25.9994ZM43.114 25.9994C43.114 35.4517 35.4514 43.1143 25.9992 43.1143C16.5469 43.1143 8.88432 35.4517 8.88432 25.9994C8.88432 16.5471 16.5469 8.88456 25.9992 8.88456C35.4514 8.88456 43.114 16.5471 43.114 25.9994Z"
-                        >
-                        </path>
-                      </svg>
-                    </div>
-                    <div class="solution-content">
-                      <h4>
-                        <a href="service-details.html">Web Applications</a>
-                      </h4>
-                      <p>
-                        Dynamic web applications designed to enhance user
-                        experience and meet business objectives.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="solution-card">
-                    <div class="icon">
-                      <svg
-                        width="60"
-                        height="60"
-                        viewBox="0 0 60 60"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_498_44055)">
-                          <path
-                            d="M26.7704 44.2509C26.3438 44.6775 25.6521 44.6775 25.2255 44.2509L14.8473 33.8728C14.4207 33.4462 14.4207 32.7545 14.8473 32.3279L25.2255 21.9497C25.6521 21.5231 26.3438 21.5231 26.7704 21.9497L37.1486 32.3279C37.5752 32.7545 37.5752 33.4462 37.1486 33.8728L26.7704 44.2509ZM26.7704 19.1248C26.3438 19.5515 25.6521 19.5515 25.2255 19.1248L20.3095 14.2089C19.8829 13.7822 19.8829 13.0905 20.3095 12.6639L25.2255 7.74795C25.6521 7.32132 26.3438 7.32132 26.7704 7.74795L31.6864 12.6639C32.113 13.0906 32.113 13.7823 31.6864 14.2089L26.7704 19.1248Z"
-                          >
-                          </path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_498_44055">
-                            <rect
-                              width="37.1429"
-                              height="37.1429"
-                              fill="white"
-                              transform="translate(7.42773 7.42847)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
-                    <div class="solution-content">
-                      <h4>
-                        <a href="service-details.html">Custom Software</a>
-                      </h4>
-                      <p>
-                        Deploy your Minimum Viable Product (MVP), streamline
-                        your systems, or elevate your digital product to new
-                        heights. We deliver on time.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="solution-card">
-                    <div class="icon">
-                      <svg
-                        width="60"
-                        height="60"
-                        viewBox="0 0 60 60"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_498_44150)">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M13.3706 26.1187C13.3706 20.1294 17.487 15.1078 23.0277 13.7629V7.66614C14.1835 9.09749 7.42773 16.814 7.42773 26.1187C7.42773 35.4231 14.1835 43.1397 23.0277 44.571V38.4742C17.487 37.1295 13.3706 32.1078 13.3706 26.1187ZM44.5706 26.1187C44.5706 35.4231 37.8149 43.1397 28.9706 44.571V38.4742C34.5114 37.1295 38.6277 32.1078 38.6277 26.1187C38.6277 20.1294 34.5114 15.1078 28.9706 13.7629V7.66614C37.8149 9.09749 44.5706 16.814 44.5706 26.1187Z"
-                          >
-                          </path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_498_44150">
-                            <rect
-                              width="37.1429"
-                              height="37.1429"
-                              transform="translate(7.42773 7.42859)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
-                    <div class="solution-content">
-                      <h4>
-                        <a href="service-details.html">System integrations</a>
-                      </h4>
-                      <p>
-                        Integrate diverse platforms smoothly; achieve unified
-                        operations and enhanced efficiency with us.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="solution-card">
-                    <div class="icon">
-                      <svg
-                        width="60"
-                        height="60"
-                        viewBox="0 0 60 60"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42773 17.256V34.7438C7.42773 40.1771 11.8219 44.5713 17.2553 44.5713H34.743C40.1764 44.5713 44.5706 40.1771 44.5706 34.7438V17.256C44.5706 11.8227 40.1764 7.42847 34.743 7.42847H17.2553C11.8219 7.45816 7.42773 11.8524 7.42773 17.256ZM17.285 42.107C13.1877 42.107 9.86234 38.7817 9.86234 34.6844C9.86234 30.5871 13.1877 27.2617 17.285 27.2617C21.3823 27.2617 24.7076 30.5871 24.7076 34.6844C24.7076 38.7817 21.3823 42.107 17.285 42.107ZM17.285 24.7381C13.1877 24.7381 9.86234 21.4127 9.86234 17.3154C9.86234 13.2181 13.1877 9.89278 17.285 9.89278C21.3823 9.89278 24.7076 13.2181 24.7076 17.3154C24.7076 21.4127 21.3823 24.7381 17.285 24.7381ZM34.6539 42.107C30.5567 42.107 27.2313 38.7817 27.2313 34.6844C27.2313 30.5871 30.5567 27.2617 34.6539 27.2617C38.7512 27.2617 42.0766 30.5871 42.0766 34.6844C42.0766 38.7817 38.7512 42.107 34.6539 42.107ZM34.6539 24.7381C30.5567 24.7381 27.2313 21.4127 27.2313 17.3154C27.2313 13.2181 30.5567 9.89278 34.6539 9.89278C38.7512 9.89278 42.0766 13.2181 42.0766 17.3154C42.0766 21.4127 38.7512 24.7381 34.6539 24.7381Z"
-                        >
-                        </path>
-                      </svg>
-                    </div>
-                    <div class="solution-content">
-                      <h4>
-                        <a href="service-details.html">Mobile Applications</a>
-                      </h4>
-                      <p>
-                        Using tested technologies to integrate mobile apps for
-                        your costumers & partners.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <ServicesComponent />
     <!-- End Solution Section -->
 
     <!-- Start About Section -->
@@ -408,7 +221,7 @@ import GridImage from "assets/img/home-3/ilust-grids.webp";
     <!-- Start CTA Section -->
     <div class="home3-cta-section">
       <div class="container">
-        <div class="row">
+        <div class="row flex items-center">
           <div class="col-lg-9">
             <div class="section-title-3 wow animate fadeInUp">
               <h2 aria-label="We serve as your dedicated SWAT team, enhancing new ideas & existing products into customized, polished, and scalable solutions">
@@ -436,7 +249,7 @@ import GridImage from "assets/img/home-3/ilust-grids.webp";
               </a>
             </div>
             <Image
-              class="img-fluid magnetic-item decorative"
+              class="img-fluid decorative"
               src={GridImage}
               loading="eager"
               alt=""
