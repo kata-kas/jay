@@ -25,5 +25,5 @@ export default defineConfig({
     }
   }),
   site: "https://jay-software.com",
-  integrations: [tailwind(), sitemap(), alpinejs()]
+  integrations: [tailwind(), sitemap(), playformCompress(), alpinejs(), compressor()]
 });
