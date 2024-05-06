@@ -38,6 +38,15 @@ dependencies:
   astro:
     specifier: ^4.6.1
     version: 4.6.1(typescript@5.4.5)
+  astro-compressor:
+    specifier: ^0.4.1
+    version: 0.4.1
+  astro-purgecss:
+    specifier: ^4.1.1
+    version: 4.1.1(astro@4.6.1)(purgecss@6.0.0)
+  purgecss:
+    specifier: ^6.0.0
+    version: 6.0.0
   rollup:
     specifier: ^4.17.2
     version: 4.17.2
@@ -1812,6 +1821,20 @@ packages:
   /array-union@2.1.0:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
+    dev: false
+
+  /astro-compressor@0.4.1:
+    resolution: {integrity: sha512-IAgYAlxYRMolaptsFB9quH7RxX4eUeC4UfULCPhT+ILcg7m1kbaxuyUKqGg9Hh+KZ+FNPPDAz7DqUfl+HDWhQg==}
+    dev: false
+
+  /astro-purgecss@4.1.1(astro@4.6.1)(purgecss@6.0.0):
+    resolution: {integrity: sha512-Lrtd+8iwznjQUBW1aqgdEYyc5xSgRa+Ir97EMsX17WvI6aVXGLoEWsVxQD9qtcGfLU5Qoq1hQOUKzVbCJSHcAg==}
+    peerDependencies:
+      astro: ^4.0.0
+      purgecss: ^6.0.0
+    dependencies:
+      astro: 4.6.1(typescript@5.4.5)
+      purgecss: 6.0.0
     dev: false
 
   /astro@4.5.16(lightningcss@1.24.1)(terser@5.30.3)(typescript@5.4.5):
@@ -4471,6 +4494,16 @@ packages:
       once: 1.4.0
     dev: false
     optional: true
+
+  /purgecss@6.0.0:
+    resolution: {integrity: sha512-s3EBxg5RSWmpqd0KGzNqPiaBbWDz1/As+2MzoYVGMqgDqRTLBhJW6sywfTBek7OwNfoS/6pS0xdtvChNhFj2cw==}
+    hasBin: true
+    dependencies:
+      commander: 12.0.0
+      glob: 10.3.12
+      postcss: 8.4.38
+      postcss-selector-parser: 6.0.16
+    dev: false
 
   /queue-lit@1.5.2:
     resolution: {integrity: sha512-tLc36IOPeMAubu8BkW8YDBV+WyIgKlYU7zUNs0J5Vk9skSZ4JfGlPOqplP0aHdfv7HL0B2Pg6nwiq60Qc6M2Hw==}
