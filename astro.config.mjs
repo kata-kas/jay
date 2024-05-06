@@ -2,8 +2,9 @@ import { defineConfig } from 'astro/config';
 import vercelStatic from "@astrojs/vercel/static";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
-
 import playformCompress from "@playform/compress";
+
+import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,5 +23,5 @@ export default defineConfig({
     }
   }),
   site: "https://jay-software.com",
-  integrations: [tailwind(), sitemap(), playformCompress()],
+  integrations: [tailwind(), sitemap(), playformCompress(), alpinejs()]
 });
