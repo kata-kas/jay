@@ -4,6 +4,7 @@ interface Props {
 }
 import SpeedInsights from "@vercel/speed-insights/astro";
 import {ViewTransitions} from "astro:transitions";
+import NavComponent from "src/components/NavComponent.astro";
 const { title } = Astro.props;
 ---
 
@@ -83,64 +84,7 @@ const { title } = Astro.props;
     >
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="header-area2 one">
-      <div class="header-logo">
-        <a href="index.html">
-          <img alt="logo" src="assets/img/jay-logo.svg" />
-        </a>
-      </div>
-      <div class="main-menu">
-        <div
-          class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center"
-        >
-          <div class="mobile-logo-wrap">
-            <a href="index.html">
-              <img alt="logo" src="assets/img/jay-logo.svg" />
-            </a>
-          </div>
-        </div>
-        <ul class="menu-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="/blog">Blog</a></li>
-        </ul>
-        <div class="d-lg-none d-block">
-          <form class="mobile-menu-form">
-            <div class="email pt-20 d-flex align-items-center">
-              <div class="email-icon">
-                <svg
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_461_205)">
-                    <path
-                      d="M23.5117 3.30075H2.38674C1.04261 3.30075 -0.0507812 4.39414 -0.0507812 5.73827V20.3633C-0.0507812 21.7074 1.04261 22.8008 2.38674 22.8008H23.5117C24.8558 22.8008 25.9492 21.7074 25.9492 20.3633V5.73827C25.9492 4.39414 24.8558 3.30075 23.5117 3.30075ZM23.5117 4.92574C23.6221 4.92574 23.7271 4.94865 23.8231 4.98865L12.9492 14.4131L2.07526 4.98865C2.17127 4.9487 2.27629 4.92574 2.38668 4.92574H23.5117ZM23.5117 21.1757H2.38674C1.93844 21.1757 1.57421 20.8116 1.57421 20.3632V6.70547L12.4168 16.1024C12.57 16.2349 12.7596 16.3008 12.9492 16.3008C13.1388 16.3008 13.3285 16.2349 13.4816 16.1024L24.3242 6.70547V20.3633C24.3242 20.8116 23.96 21.1757 23.5117 21.1757Z"
-                    >
-                    </path>
-                  </g>
-                </svg>
-              </div>
-              <div class="email-info">
-                <span>Email Now</span>
-                <h6>
-                  <a href="mailto:catalin.casuneanu@jay-software.com"
-                    >catalin.casuneanu@jay-software.com</a
-                  >
-                </h6>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="nav-right d-flex jsutify-content-end align-items-center">
-        <div class="sidebar-button mobile-menu-btn">
-          <span></span>
-        </div>
-      </div>
-    </header>
+    <NavComponent />
     <!-- End header section -->
     <slot />
     <!-- Start Footer section -->

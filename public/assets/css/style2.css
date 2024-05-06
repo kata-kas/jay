@@ -1583,9 +1583,6 @@ video {
 }
 
 .banner-area3 {
-  background-image: url(../img/home-3/home3-banner-bg.png), linear-gradient(#101010, #1d1d1d);
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
   z-index: 1;
 }
@@ -4536,7 +4533,6 @@ video {
 }
 
 .home3-partner-area {
-  background: #1B1F23;
   padding: 30px 65px;
 }
 @media (max-width: 1399px) {
@@ -7208,13 +7204,7 @@ video {
 }
 
 footer {
-  background-image: url(../img/footer/footer-bg.png), linear-gradient(#1d1d1d, #1d1d1d);
-  background-size: cover;
-  background-repeat: no-repeat;
   overflow: hidden;
-}
-footer.two {
-  background-image: url(../img/footer/footer-bg.png), linear-gradient(#1d2125, #1d2125);
 }
 @media (max-width: 767px) {
   footer.two {
@@ -10860,9 +10850,7 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   border-color: var(--theme-color);
 }
 .contact-page-wrap .contact-form-wrap {
-  background-image: url(../img/home-4/pricing-bg-3.png), linear-gradient(#161A1E, #161A1E);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #0F0F0F;
   position: relative;
   border-radius: 10px;
 }
