@@ -310,14 +310,38 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
                           <p class="text-white">You can reach us anytime via <a href="mailto:info@jay-software.com">info@jay-software.com</a></p>
                         </div>
                         <div class="contact-form">
-                          <script is:inline charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
-                          <script is:inline>
-                            hbspt.forms.create({
-                              region: "eu1",
-                              portalId: "144532460",
-                              formId: "350e5bc8-8c56-49bd-9333-bf2a476186c5"
-                            });
-                          </script>
+                          <form
+                          action="https://formspree.io/f/mqkrgoeq"
+                          method="POST"
+                        >
+                          <div class="row text-left">
+                            <div class="col-lg-12 mb-4">
+                              <div class="form-inner">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email"/>
+                              </div>
+                            </div>
+                            <div class="col-lg-12 mb-4">
+                              <div class="form-inner">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message"></textarea>
+                              </div>
+                            </div>
+                            <div class="col-lg-12 mb-4">
+                              <div class="form-inner">
+                                <input required type="checkbox" name="privacy" id="privacy">
+                                <label for="privacy">You agree to our friendly <a href="/privacy" target="_blank">privacy policy</a></label>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="form-inner">
+                                <button class="primary-btn3 text-white" type="submit"
+                                  >Send</button
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </form>
                         </div>
                       </div>
                     </div>
