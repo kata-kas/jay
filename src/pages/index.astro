@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import MarqueeComponent from "../components/MarqueeComponent.astro";
 import MarqueeItemComponent from "../components/MarqueeItemComponent.astro";
 import ServicesComponent from "../components/ServicesComponent.astro";
@@ -21,462 +21,594 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
 ---
 
 <Layout title="Jay - Software Agency and creative IT solutions">
-    <!-- Start Banner section -->
-    <div class="banner-area3 bg-gray-900">
-      <div class="scroll-down">
-        <a href="#home3-partner-area">
-          Scroll Down
-          <span>
-            <Image src={ScrollDownIcon} alt="scroll down icon" />
-          </span>
-        </a>
+  <!-- Start Banner section -->
+  <div class="banner-area3  ">
+    <div class="scroll-down">
+      <a href="#home3-partner-area">
+        Scroll Down
+        <span>
+          <Image src={ScrollDownIcon} alt="scroll down icon" />
+        </span>
+      </a>
+    </div>
+    <div class="swiper-pagination1"></div>
+    <div class="social-area">
+      <ul>
+        <li>
+          <a
+            href="https://www.facebook.com/jaysoftwarero/"
+            aria-label="Facebook"><i class="bx bxl-facebook"></i></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://ro.linkedin.com/company/jaysoftware"
+            aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/jay_software/"
+            aria-label="Instagram"><i class="bx bxl-instagram"></i></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="banner3-slider">
+      <div class="banner-wrapper">
+        <div class="banner-content">
+          <h1>
+            Building <span class="relative inline-block text-primary min-w-max"
+              ><div
+                class="text-shadow bg-text_shadow absolute -z-10 -left-1 -right-[.5ch] -top-2 -bottom-2"
+              >
+              </div>Custom Web <span class="hidden sm:inline">Solutions</span
+              ></span
+            > that Drive Results
+          </h1>
+          <p>Transform Your Business with Our Cutting-Edge Solutions</p>
+          <div class="banner-btn-group">
+            <a class="primary-btn3 inline-flex" href="#contact"
+              >Let's Talk
+              <Image src={ArrowUpIcon} alt="let's talk icon" />
+            </a>
+          </div>
+        </div>
+        <div>
+          <Image
+            class="img-fluid hidden lg:block"
+            src={ConeImage}
+            height={500}
+            width={500}
+            alt=""
+            loading="eager"
+          />
+        </div>
+        <div>
+          <Image
+            class="img-fluid hidden lg:block"
+            src={DonutImage}
+            height={500}
+            width={500}
+            alt=""
+            loading="eager"
+          />
+        </div>
       </div>
-      <div class="swiper-pagination1"></div>
-      <div class="social-area">
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/jaysoftwarero/" aria-label="Facebook"
-              ><i class="bx bxl-facebook"></i></a>
-          </li>
-          <li>
-            <a href="https://ro.linkedin.com/company/jaysoftware" aria-label="LinkedIn"
-              ><i class="bx bxl-linkedin"></i></a
-            >
-          </li>
-          <li>
-            <a href="https://www.instagram.com/jay_software/" aria-label="Instagram"
-              ><i class="bx bxl-instagram"></i></a>
-          </li>
-        </ul>
+    </div>
+  </div>
+  <!-- End Banner section -->
+  <!-- Start Partner section -->
+  <div class="home3-partner-area" id="home3-partner-area">
+    <div class="container-fluid">
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_10px_3fr] gap-2">
+        <div
+          class="flex items-center font-saira font-semibold text-5xl leading-10 capitalize text-white mb-0 max-w-250 w-full"
+        >
+          <h3>Our Collaborators</h3>
+        </div>
+        <span class="h-full w-[1px] bg-opacity-10 bg-white"></span>
+        <MarqueeComponent>
+          <MarqueeItemComponent
+            imgSrc={CirkusLogo}
+            alt="Cirkus | Task Management Software"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={BMWLogo}
+            alt="BMWGroup | Automotive Industry"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={PluriaLogo}
+            alt="Pluria | Coworking Management Software"
+          />
+
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={BrightPinkLogo}
+            alt="Bright Pink Agency | Marketing Agency"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={Go1Logo}
+            alt="Go1 | Learning Platform"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={JBALogo}
+            alt="JBA | Mapping and Flood Risk Management"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={CirkusLogo}
+            alt="Cirkus | Task Management Software"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={BMWLogo}
+            alt="BMWGroup | Automotive Industry"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={PluriaLogo}
+            alt="Pluria | Coworking Management Software"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={BrightPinkLogo}
+            alt="Bright Pink Agency | Marketing Agency"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={Go1Logo}
+            alt="Go1 | Learning Platform"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={JBALogo}
+            alt="JBA | Mapping and Flood Risk Management"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={CirkusLogo}
+            alt="Cirkus | Task Management Software"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={BMWLogo}
+            alt="BMWGroup | Automotive Industry"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={PluriaLogo}
+            alt="Pluria | Coworking Management Software"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+
+          <MarqueeItemComponent
+            imgSrc={BrightPinkLogo}
+            alt="Bright Pink Agency | Marketing Agency"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={Go1Logo}
+            alt="Go1 | Learning Platform"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeItemComponent
+            imgSrc={JBALogo}
+            alt="JBA | Mapping and Flood Risk Management"
+          />
+          <Image
+            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
+            src={StarImage}
+            alt=""
+          />
+          <MarqueeComponent />
+        </MarqueeComponent>
       </div>
-      <div class="banner3-slider">
-        <div class="banner-wrapper">
-          <div class="banner-content">
-            <h1>Turn your idea into a market ready product</h1>
-            <p>
-              Transform your startup’s vision into reality with our custom
-              software solutions. Elevate your brand and engage your audience
-              through tailored development.
-            </p>
-            <div class="banner-btn-group">
-              <a class="primary-btn3 inline-flex" href="#contact"
-                >Let's Talk
-                <Image src={ArrowUpIcon} alt="let's talk icon" />
-              </a>
+      <!-- End Partner section -->
+      <!-- Start Solution Section -->
+      <ServicesComponent />
+      <!-- End Solution Section -->
+
+      <!-- Start About Section -->
+      <div id="about" class="home3-about-section sec-mar">
+        <div class="container">
+          <div class="row g-lg-4 gy-5">
+            <div class="col-lg-12">
+              <div
+                class="section-title-3 wow animate fadeInUp"
+                data-wow-delay="200ms"
+                data-wow-duration="1500ms"
+              >
+                <h2 aria-label="Our Approach">Our Approach</h2>
+              </div>
+              <div class="about-left">
+                <div
+                  class="about-content wow animate fadeInUp"
+                  data-wow-delay="400ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="devider"></div>
+                  <ul class="about-feature">
+                    <li>
+                      <h5 aria-label="Discover & Define">
+                        1. Discover & Define
+                      </h5>
+                      <p>
+                        A mapping of all the flows of the platform is carried
+                        out, to analyze and evaluate the complexity and
+                        determinate possible solutions that can be given to our
+                        problem.
+                      </p>
+                    </li>
+                    <li>
+                      <h5 aria-label="Conceptualize">2. Conceptualize</h5>
+                      <p>
+                        Ideation of visual solutions for evaluated flows, also
+                        with rapid prototyping to test the effectiveness of
+                        these solutions. Raise front-end impact if necessary.
+                      </p>
+                    </li>
+                    <li>
+                      <h5 aria-label="Build">3. Build</h5>
+                      <p>
+                        Implement the product solutions, optimize your systems
+                        and increase the engagement of your platform.
+                      </p>
+                    </li>
+                    <li>
+                      <h5 aria-label="Maintain">4. Maintain</h5>
+                      <p>
+                        Efficiently maintain and continuously improve your
+                        digital product to ensure ROI and ongoing value for your
+                        customers.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div>
-            <Image class="img-fluid  hidden lg:block" src={ConeImage} height={500} width={500} alt="" loading="eager" />
-          </div>
-          <div>
-            <Image class="img-fluid  hidden lg:block" src={DonutImage} height={500} width={500} alt="" loading="eager" />
-          </div>
         </div>
       </div>
-    </div>
-    <!-- End Banner section -->
-    <!-- Start Partner section -->
-    <div class="home3-partner-area" id="home3-partner-area">
-      <div class="container-fluid">
-        <div class="grid grid-cols-1 md:grid-cols-[1fr_10px_3fr] gap-2">
-          <div class="flex items-center font-saira font-semibold text-5xl leading-10 capitalize text-white mb-0 max-w-250 w-full">
-            <h3>Our Collaborators</h3>
-          </div>
-          <span class="h-full w-[1px] bg-opacity-10 bg-white"></span>
-           <MarqueeComponent>
-            <MarqueeItemComponent imgSrc={CirkusLogo} alt="Cirkus | Task Management Software" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={BMWLogo} alt="BMWGroup | Automotive Industry" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={PluriaLogo} alt="Pluria | Coworking Management Software" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={WebChainLogo} alt="Webchain | Outsourcing Industry" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={BrightPinkLogo} alt="Bright Pink Agency | Marketing Agency" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={Go1Logo} alt="Go1 | Learning Platform" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={JBALogo} alt="JBA | Mapping and Flood Risk Management" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={CirkusLogo} alt="Cirkus | Task Management Software" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={BMWLogo} alt="BMWGroup | Automotive Industry" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={PluriaLogo} alt="Pluria | Coworking Management Software" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={WebChainLogo} alt="Webchain | Outsourcing Industry" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={BrightPinkLogo} alt="Bright Pink Agency | Marketing Agency" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={Go1Logo} alt="Go1 | Learning Platform" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={JBALogo} alt="JBA | Mapping and Flood Risk Management" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={CirkusLogo} alt="Cirkus | Task Management Software" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={BMWLogo} alt="BMWGroup | Automotive Industry" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={PluriaLogo} alt="Pluria | Coworking Management Software" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={WebChainLogo} alt="Webchain | Outsourcing Industry" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={BrightPinkLogo} alt="Bright Pink Agency | Marketing Agency" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={Go1Logo} alt="Go1 | Learning Platform" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-            <MarqueeItemComponent imgSrc={JBALogo} alt="JBA | Mapping and Flood Risk Management" />
-           <Image
-                class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-                src={StarImage}
-                alt=""
-            />
-          <MarqueeComponent>
-        </div>
-      </div>
-    </div>
-    <!-- End Partner section -->
-    <!-- Start Solution Section -->
-    <ServicesComponent />
-    <!-- End Solution Section -->
+      <!-- End About Section -->
 
-    <!-- Start About Section -->
-    <div id="about" class="home3-about-section sec-mar">
-      <div class="container">
-        <div class="row g-lg-4 gy-5">
-          <div class="col-lg-12">
+      <!-- Start CTA Section -->
+      <div
+        class="mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 text-white"
+      >
+        <div class="container">
+          <div class="row flex items-center">
+            <div class="col-lg-9">
+              <div class="section-title-3 wow animate fadeInUp">
+                <h2
+                  aria-label="We serve as your dedicated SWAT team, enhancing new ideas & existing products into customized, polished, and scalable solutions"
+                >
+                  We serve as your dedicated SWAT team, enhancing new ideas &
+                  existing products into customized, polished, and scalable
+                  solutions
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="banner-btn-group">
+                <a class="primary-btn3 inline-flex" href="#contact"
+                  >Let's Talk
+                  <Image src={ArrowUpIcon} alt="let's talk icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End CTA Section -->
+
+      <!-- End Testimonial section -->
+      <div class="home4-testimonial-section sec-mar">
+        <div class="container">
+          <div
+            class="row wow animate fadeInUp"
+            data-wow-delay="200ms"
+            data-wow-duration="1500ms"
+          >
+            <div class="col-lg-12">
+              <div class="section-title-4 text-center two">
+                <span>Client Experiences</span>
+                <h2>
+                  Appreciations From Our <span>Satisfied</span> Customers.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4">
             <div
-              class="section-title-3 wow animate fadeInUp"
+              class="col-lg-7 wow animate fadeInUp"
               data-wow-delay="200ms"
               data-wow-duration="1500ms"
             >
-              <h2 aria-label="Our Approach">Our Approach</h2>
+              <div class="testimonial-card4">
+                <div class="quate-icon">
+                  <img src="assets/img/home-4/left-quote.svg" alt="" />
+                </div>
+                <div class="testimonial-top">
+                  <div class="author-area">
+                    <div class="author-img">
+                      <img
+                        src="https://media.licdn.com/dms/image/C4E03AQFtmQ-s-UaCXA/profile-displayphoto-shrink_200_200/0/1646644885477?e=2147483647&v=beta&t=kyMbSH2BkvZ774yIm_hnrDCjcqIZNsCxaowJ0FAPIMw"
+                        alt=""
+                      />
+                    </div>
+                    <div class="author-content">
+                      <h4>Tomasz Kornas</h4>
+                      <span>CEO, Seeking Greatness</span>
+                    </div>
+                  </div>
+                  <div class="review-date-and-time">
+                    <p>Nov 11, 2023</p>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>
+                    “Jay Software is an absolute pleasure to work with, on time,
+                    advising better solutions, super happy with the end
+                    product.”
+                  </p>
+                </div>
+                <div class="testimonial-btm">
+                  <div class="review-right">
+                    <div class="review-right">
+                      <ul class="star">
+                        <li><i class="bi bi-star-fill"></i></li>
+                        <li><i class="bi bi-star-fill"></i></li>
+                        <li><i class="bi bi-star-fill"></i></li>
+                        <li><i class="bi bi-star-fill"></i></li>
+                        <li><i class="bi bi-star-fill"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="about-left">
-              <div
-                class="about-content wow animate fadeInUp"
-                data-wow-delay="400ms"
-                data-wow-duration="1500ms"
-              >
-                <div class="devider"></div>
-                <ul class="about-feature">
-                  <li>
-                    <h5 aria-label="Discover & Define">1. Discover & Define</h5>
-                    <p>
-                      A mapping of all the flows of the platform is carried out, to analyze and
-                      evaluate the complexity and determinate possible solutions that can be
-                      given to our problem.
-                    </p>
-                  </li>
-                  <li>
-                    <h5 aria-label="Conceptualize">2. Conceptualize</h5>
-                    <p>
-                      Ideation of visual solutions for evaluated flows, also with rapid
-                      prototyping to test the effectiveness of these solutions. Raise front-end
-                      impact if necessary.
-                    </p>
-                  </li>
-                  <li>
-                    <h5 aria-label="Build">3. Build</h5>
-                    <p>
-                      Implement the product solutions, optimize your systems and increase the
-                      engagement of your platform.
-                    </p>
-                  </li>
-                  <li>
-                    <h5 aria-label="Maintain">4. Maintain</h5>
-                    <p>
-                      Efficiently maintain and continuously improve your digital product to
-                      ensure ROI and ongoing value for your customers.
-                    </p>
-                  </li>
-                </ul>
+            <div
+              class="col-lg-5 mt-35 wow animate fadeInUp"
+              data-wow-delay="300ms"
+              data-wow-duration="1500ms"
+            >
+              <div class="testimonial-card4">
+                <div class="quate-icon">
+                  <img src="assets/img/home-4/left-quote.svg" alt="" />
+                </div>
+                <div class="testimonial-top">
+                  <div class="author-area">
+                    <div class="author-img">
+                      <img
+                        src="https://media.licdn.com/dms/image/D5603AQGjkoZbXTM5Kg/profile-displayphoto-shrink_400_400/0/1710053572776?e=2147483647&v=beta&t=ClsAQVPEnlU4Dtw78oct7QqaHB1YsBkc1JODGlgB3u8"
+                        alt=""
+                      />
+                    </div>
+                    <div class="author-content">
+                      <h4>Matei A.</h4>
+                      <span>CEO, Optico AI</span>
+                    </div>
+                  </div>
+                  <div class="review-date-and-time">
+                    <p>May 9, 2023</p>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>
+                    “Working with Jay Software was an absolute pleasure! Their
+                    team not only delivered top-notch code but also provided
+                    valuable insights throughout the development process. Highly
+                    recommended!”
+                  </p>
+                </div>
+                <div class="testimonial-btm">
+                  <div class="review-right">
+                    <ul class="star">
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 mt--35 wow animate fadeInUp"
+              data-wow-delay="200ms"
+              data-wow-duration="1500ms"
+            >
+              <div class="testimonial-card4">
+                <div class="quate-icon">
+                  <img src="assets/img/home-4/left-quote.svg" alt="" />
+                </div>
+                <div class="testimonial-top">
+                  <div class="author-area">
+                    <div class="author-img">
+                      <img
+                        src="https://media.licdn.com/dms/image/D5622AQGSMNc05tmDiQ/feedshare-shrink_800/0/1700236168761?e=2147483647&v=beta&t=cHj8eJsLJrFGebqsErGOO4wUUHg1XSTEmQiDz2k743g"
+                        alt=""
+                      />
+                    </div>
+                    <div class="author-content">
+                      <h4>Nazar Ponochevnyi</h4>
+                      <span>Founder & CEO, Harmix</span>
+                    </div>
+                  </div>
+                  <div class="review-date-and-time">
+                    <p>May 9, 2023</p>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>
+                    “Jay Software's commitment to excellence is evident in every
+                    aspect of their work. They possess a rare combination of
+                    technical prowess, creativity, and professionalism that sets
+                    them apart from other agencies. Our project was complex, but
+                    they navigated it with ease, delivering results that
+                    surpassed our expectations. It's clear that they genuinely
+                    care about their clients' success, and we couldn't be
+                    happier with the outcome.”
+                  </p>
+                </div>
+                <div class="testimonial-btm">
+                  <div class="review-right">
+                    <ul class="star">
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-7 wow animate fadeInUp"
+              data-wow-delay="300ms"
+              data-wow-duration="1500ms"
+            >
+              <div class="testimonial-card4">
+                <div class="quate-icon">
+                  <img src="assets/img/home-4/left-quote.svg" alt="" />
+                </div>
+                <div class="testimonial-top">
+                  <div class="author-area">
+                    <div class="author-img">
+                      <img
+                        src="https://media.licdn.com/dms/image/C5603AQGNRNZGOnfrJw/profile-displayphoto-shrink_200_200/0/1643807812206?e=2147483647&v=beta&t=Tojllvk-A-MpleoJSCrMJTVv5kmX1W3TXm_Jef3zAQI"
+                        alt=""
+                      />
+                    </div>
+                    <div class="author-content">
+                      <h4>Bryan Adams</h4>
+                      <span>CTO, Duo Health</span>
+                    </div>
+                  </div>
+                  <div class="review-date-and-time">
+                    <p>May 9, 2023</p>
+                    <span>10.30 PM</span>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>
+                    “Choosing Jay Software for our project was one of the best
+                    decisions we made. Their team demonstrated a deep
+                    understanding of our requirements from the start and
+                    consistently delivered high-quality solutions. They were
+                    adaptable to changes, provided regular updates, and went
+                    above and beyond to ensure our satisfaction. Jay Software
+                    truly stands out as a premier software development agency.”
+                  </p>
+                </div>
+                <div class="testimonial-btm">
+                  <div class="review-right">
+                    <ul class="star">
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                      <li><i class="bi bi-star-fill"></i></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End About Section -->
+      <!-- End Testimonial section -->
 
-    <!-- Start CTA Section -->
-    <div class="mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 bg-gray-900 text-white">
-      <div class="container">
-        <div class="row flex items-center">
-          <div class="col-lg-9">
-            <div class="section-title-3 wow animate fadeInUp">
-              <h2 aria-label="We serve as your dedicated SWAT team, enhancing new ideas & existing products into customized, polished, and scalable solutions">
-                We serve as your dedicated SWAT team, enhancing new ideas &
-                existing products into customized, polished, and scalable
-                solutions
-              </h2>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="banner-btn-group">
-              <a class="primary-btn3 inline-flex" href="#contact"
-                >Let's Talk
-                <Image src={ArrowUpIcon} alt="let's talk icon" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End CTA Section -->
-
-     <!-- End Testimonial section -->
-     <div class="home4-testimonial-section  sec-mar">
-      <div class="container">
-          <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-              <div class="col-lg-12">
-                  <div class="section-title-4 text-center two">
-                      <span>Client Experiences</span>
-                      <h2>Appreciations From Our <span>Satisfied</span> Customers.</h2>
-                  </div>
-              </div>
-          </div>
-          <div class="row g-4">
-              <div class="col-lg-7 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                  <div class="testimonial-card4">
-                      <div class="quate-icon">
-                          <img src="assets/img/home-4/left-quote.svg" alt="">
-                      </div>
-                      <div class="testimonial-top">
-                          <div class="author-area">
-                              <div class="author-img">
-                                  <img src="https://media.licdn.com/dms/image/C4E03AQFtmQ-s-UaCXA/profile-displayphoto-shrink_200_200/0/1646644885477?e=2147483647&v=beta&t=kyMbSH2BkvZ774yIm_hnrDCjcqIZNsCxaowJ0FAPIMw" alt="">
-                              </div>
-                              <div class="author-content">
-                                  <h4>Tomasz Kornas</h4>
-                                  <span>CEO, Seeking Greatness</span>
-                              </div>
-                          </div>
-                          <div class="review-date-and-time">
-                              <p>Nov 11, 2023</p> 
-                          </div>
-                      </div>
-                      <div class="testimonial-content">
-                          <p>“Jay Software is an absolute pleasure to work with, on time, advising better solutions, super happy with the end product.”</p>
-                      </div>
-                      <div class="testimonial-btm">
-                          <div class="review-right">
-                            <div class="review-right">
-                              <ul class="star">
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                              </ul>
-                          </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-5 mt-35 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                  <div class="testimonial-card4">
-                      <div class="quate-icon">
-                          <img src="assets/img/home-4/left-quote.svg" alt="">
-                      </div>
-                      <div class="testimonial-top">
-                          <div class="author-area">
-                              <div class="author-img">
-                                  <img src="https://media.licdn.com/dms/image/D5603AQGjkoZbXTM5Kg/profile-displayphoto-shrink_400_400/0/1710053572776?e=2147483647&v=beta&t=ClsAQVPEnlU4Dtw78oct7QqaHB1YsBkc1JODGlgB3u8" alt="">
-                              </div>
-                              <div class="author-content">
-                                  <h4>Matei A.</h4>
-                                  <span>CEO, Optico AI</span>
-                              </div>
-                          </div>
-                          <div class="review-date-and-time">
-                              <p>May 9, 2023</p> 
-                          </div>
-                      </div>
-                      <div class="testimonial-content">
-                          <p>“Working with Jay Software was an absolute pleasure! Their team not only delivered top-notch code but also provided valuable insights throughout the development process. Highly recommended!”</p>
-                      </div>
-                      <div class="testimonial-btm">
-                          <div class="review-right">
-                              <ul class="star">
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-5 mt--35 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                  <div class="testimonial-card4">
-                      <div class="quate-icon">
-                          <img src="assets/img/home-4/left-quote.svg" alt="">
-                      </div>
-                      <div class="testimonial-top">
-                          <div class="author-area">
-                              <div class="author-img">
-                                  <img src="https://media.licdn.com/dms/image/D5622AQGSMNc05tmDiQ/feedshare-shrink_800/0/1700236168761?e=2147483647&v=beta&t=cHj8eJsLJrFGebqsErGOO4wUUHg1XSTEmQiDz2k743g" alt="">
-                              </div>
-                              <div class="author-content">
-                                  <h4>Nazar Ponochevnyi</h4>
-                                  <span>Founder & CEO, Harmix</span>
-                              </div>
-                          </div>
-                          <div class="review-date-and-time">
-                              <p>May 9, 2023</p> 
-                          </div>
-                      </div>
-                      <div class="testimonial-content">
-                          <p>“Jay Software's commitment to excellence is evident in every aspect of their work. They possess a rare combination of technical prowess, creativity, and professionalism that sets them apart from other agencies. Our project was complex, but they navigated it with ease, delivering results that surpassed our expectations. It's clear that they genuinely care about their clients' success, and we couldn't be happier with the outcome.”</p>
-                      </div>
-                      <div class="testimonial-btm">
-                          <div class="review-right">
-                              <ul class="star">
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                                  <li><i class="bi bi-star-fill"></i></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-7 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                  <div class="testimonial-card4">
-                      <div class="quate-icon">
-                          <img src="assets/img/home-4/left-quote.svg" alt="">
-                      </div>
-                      <div class="testimonial-top">
-                          <div class="author-area">
-                              <div class="author-img">
-                                  <img src="https://media.licdn.com/dms/image/C5603AQGNRNZGOnfrJw/profile-displayphoto-shrink_200_200/0/1643807812206?e=2147483647&v=beta&t=Tojllvk-A-MpleoJSCrMJTVv5kmX1W3TXm_Jef3zAQI" alt="">
-                              </div>
-                              <div class="author-content">
-                                  <h4>Bryan Adams</h4>
-                                  <span>CTO, Duo Health</span>
-                              </div>
-                          </div>
-                          <div class="review-date-and-time">
-                              <p>May 9, 2023</p> 
-                              <span>10.30 PM</span>
-                          </div>
-                      </div>
-                      <div class="testimonial-content">
-                          <p>“Choosing Jay Software for our project was one of the best decisions we made. Their team demonstrated a deep understanding of our requirements from the start and consistently delivered high-quality solutions. They were adaptable to changes, provided regular updates, and went above and beyond to ensure our satisfaction. Jay Software truly stands out as a premier software development agency.”</p>
-                      </div>
-                      <div class="testimonial-btm">
-                          <div class="review-right">
-                            <ul class="star">
-                                <li><i class="bi bi-star-fill"></i></li>
-                                <li><i class="bi bi-star-fill"></i></li>
-                                <li><i class="bi bi-star-fill"></i></li>
-                                <li><i class="bi bi-star-fill"></i></li>
-                                <li><i class="bi bi-star-fill"></i></li>
-                            </ul>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- End Testimonial section -->
-
-    <!-- Start Contact section -->
-    <div class="mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 bg-gray-900 text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+      <!-- Start Contact section -->
+      <div
+        class="mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16   text-white"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
               <div class="contact-page-wrap text-center">
-                <div id="contact"  class="container">
+                <div id="contact" class="container">
                   <div class="row g-lg-4 gy-5 justify-center">
                     <div class="col-lg-12">
                       <div class="contact-content">
-                        <h2>
-                          Get in touch
-                        </h2>
+                        <h2>Get in touch</h2>
                       </div>
                     </div>
                     <div class="col-lg-6">
@@ -485,41 +617,57 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
                           <h3 class="text-2xl text-white">
                             Let’s transform your business
                           </h3>
-                          <p class="text-white">You can reach us anytime via <a href="mailto:info@jay-software.com">info@jay-software.com</a></p>
+                          <p class="text-white">
+                            You can reach us anytime via <a
+                              href="mailto:info@jay-software.com"
+                              >info@jay-software.com</a>
+                          </p>
                         </div>
                         <div class="contact-form">
                           <form
-                          action="https://formspree.io/f/mqkrgoeq"
-                          method="POST"
-                        >
-                          <div class="row text-left">
-                            <div class="col-lg-12 mb-4">
-                              <div class="form-inner">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email"/>
+                            action="https://formspree.io/f/mqkrgoeq"
+                            method="POST"
+                          >
+                            <div class="row text-left">
+                              <div class="col-lg-12 mb-4">
+                                <div class="form-inner">
+                                  <label for="email">Email</label>
+                                  <input type="email" name="email" id="email" />
+                                </div>
+                              </div>
+                              <div class="col-lg-12 mb-4">
+                                <div class="form-inner">
+                                  <label for="message">Message</label>
+                                  <textarea name="message" id="message"
+                                  ></textarea>
+                                </div>
+                              </div>
+                              <div class="col-lg-12 mb-4">
+                                <div class="form-inner">
+                                  <input
+                                    required
+                                    type="checkbox"
+                                    name="privacy"
+                                    id="privacy"
+                                  />
+                                  <label for="privacy"
+                                    >You agree to our friendly <a
+                                      href="/privacy"
+                                      target="_blank">privacy policy</a
+                                    ></label
+                                  >
+                                </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="form-inner">
+                                  <button
+                                    class="primary-btn3 text-white"
+                                    type="submit">Send</button
+                                  >
+                                </div>
                               </div>
                             </div>
-                            <div class="col-lg-12 mb-4">
-                              <div class="form-inner">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message"></textarea>
-                              </div>
-                            </div>
-                            <div class="col-lg-12 mb-4">
-                              <div class="form-inner">
-                                <input required type="checkbox" name="privacy" id="privacy">
-                                <label for="privacy">You agree to our friendly <a href="/privacy" target="_blank">privacy policy</a></label>
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="form-inner">
-                                <button class="primary-btn3 text-white" type="submit"
-                                  >Send</button
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </form>
+                          </form>
                         </div>
                       </div>
                     </div>
@@ -527,8 +675,10 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
+      <!-- End Contact section -->
     </div>
-    <!-- End Contact section -->
-</Layout>
+  </div></Layout
+>

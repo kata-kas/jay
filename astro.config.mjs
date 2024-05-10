@@ -6,8 +6,6 @@ import playformCompress from "@playform/compress";
 import alpinejs from "@astrojs/alpinejs";
 import compressor from "astro-compressor";
 
-import purgecss from "astro-purgecss";
-
 // https://astro.build/config
 export default defineConfig({
   output: "static",

@@ -138,5 +138,43 @@ const { title } = Astro.props;
       var currentYear = new Date().getFullYear();
       document.getElementById("copyrightYear").textContent = currentYear;
     </script>
+     <script is:inline>
+      const words = [
+        "Hello, World!",
+        "Welcome to my website!",
+        "This is a typewriter effect.",
+      ];
+      let i = 0;
+      let j = 0;
+      let currentWord = "";
+      let isDeleting = false;
+
+      function type() {
+        currentWord = words[i];
+        const typewritter = document.getElementById("typewriter");
+        if (!typewritter) return;
+
+        if (isDeleting) {
+          typewritter.textContent = currentWord.substring(0, j - 1);
+          j--;
+          if (j == 0) {
+            isDeleting = false;
+            i++;
+            if (i == words.length) {
+              i = 0;
+            }
+          }
+        } else {
+          typewritter.textContent = currentWord.substring(0, j + 1);
+          j++;
+          if (j == currentWord.length) {
+            isDeleting = true;
+          }
+        }
+        setTimeout(type, 100);
+      }
+
+      type();
+    </script>
   </body>
 </html>
