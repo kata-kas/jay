@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import MarqueeComponent from "../components/MarqueeComponent.astro";
-import MarqueeItemComponent from "../components/MarqueeItemComponent.astro";
 import ServicesComponent from "../components/ServicesComponent.astro";
 
 import ConeImage from "assets/img/home-3/cone.webp";
@@ -12,9 +11,7 @@ import StarImage from "assets/img/home-3/star.svg";
 import CirkusLogo from "assets/img/partners/cirkus-logo.svg";
 import BMWLogo from "assets/img/partners/bmw-group.svg";
 import PluriaLogo from "assets/img/partners/logo-pluria.svg";
-import WebChainLogo from "assets/img/partners/logo_webchain_transparent_alb.png";
 import BrightPinkLogo from "assets/img/partners/bright-se-logo.svg";
-import Go1Logo from "assets/img/partners/go-1-logo.svg";
 import JBALogo from "assets/img/partners/jba-group-logo.svg";
 import ScrollDownIcon from "assets/img/icons/scroll_down.svg";
 import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
@@ -22,7 +19,7 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
 
 <Layout title="Jay - Software Agency and creative IT solutions">
   <!-- Start Banner section -->
-  <div class="banner-area3  ">
+  <div class="banner-area3">
     <div class="scroll-down">
       <a href="#home3-partner-area">
         Scroll Down
@@ -58,18 +55,26 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
       <div class="banner-wrapper">
         <div class="banner-content">
           <h1>
-            Building <span class="relative inline-block text-primary min-w-max"
+            Building
+            <span class="relative inline-block text-primary min-w-max"
               ><div
                 class="text-shadow bg-text_shadow absolute -z-10 -left-1 -right-[.5ch] -top-2 -bottom-2"
               >
-              </div>Custom Web <span class="hidden sm:inline">Solutions</span
+              </div>Custom Software <span class="hidden sm:inline"
+                >Solutions</span
               ></span
-            > that Drive Results
+            >
+            <span class="relative inline-block min-w-max"
+              >that Drive <span
+                class="highlight highlight-indigo-600 highlight-variant-13"
+                >Results</span
+              ></span
+            >
           </h1>
-          <p>Transform Your Business with Our Cutting-Edge Solutions</p>
+          <p>Tailored Technology for Tangible Transformation</p>
           <div class="banner-btn-group">
-            <a class="primary-btn3 inline-flex" href="#contact"
-              >Let's Talk
+            <a class="primary-btn3 inline-flex text-white" href="#contact">
+              Let's Craft Your Solution
               <Image src={ArrowUpIcon} alt="let's talk icon" />
             </a>
           </div>
@@ -109,26 +114,20 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
         </div>
         <span class="h-full w-[1px] bg-opacity-10 bg-white"></span>
         <MarqueeComponent>
-          <MarqueeItemComponent
-            imgSrc={CirkusLogo}
-            alt="Cirkus | Task Management Software"
-          />
+          <Image src={CirkusLogo} alt="Cirkus | Task Management Software" />
           <Image
             class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={BMWLogo}
-            alt="BMWGroup | Automotive Industry"
-          />
+          <Image src={BMWLogo} alt="BMWGroup | Automotive Industry" />
           <Image
             class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={PluriaLogo}
+          <Image
+            src={PluriaLogo}
             alt="Pluria | Coworking Management Software"
           />
 
@@ -137,8 +136,8 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={BrightPinkLogo}
+          <Image
+            src={BrightPinkLogo}
             alt="Bright Pink Agency | Marketing Agency"
           />
           <Image
@@ -146,55 +145,35 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={Go1Logo}
-            alt="Go1 | Learning Platform"
-          />
+          <Image src={JBALogo} alt="JBA | Mapping and Flood Risk Management" />
           <Image
             class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={JBALogo}
-            alt="JBA | Mapping and Flood Risk Management"
-          />
+          <Image src={CirkusLogo} alt="Cirkus | Task Management Software" />
           <Image
             class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={CirkusLogo}
-            alt="Cirkus | Task Management Software"
-          />
+          <Image src={BMWLogo} alt="BMWGroup | Automotive Industry" />
           <Image
             class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={BMWLogo}
-            alt="BMWGroup | Automotive Industry"
-          />
           <Image
-            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-            src={StarImage}
-            alt=""
-          />
-          <MarqueeItemComponent
-            imgSrc={PluriaLogo}
+            src={PluriaLogo}
             alt="Pluria | Coworking Management Software"
           />
           <Image
             class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
             src={StarImage}
             alt=""
-          />            src={StarImage}
-            alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={BrightPinkLogo}
+          <Image
+            src={BrightPinkLogo}
             alt="Bright Pink Agency | Marketing Agency"
           />
           <Image
@@ -202,44 +181,27 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={Go1Logo}
-            alt="Go1 | Learning Platform"
-          />
+
+          <Image src={JBALogo} alt="JBA | Mapping and Flood Risk Management" />
           <Image
             class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={JBALogo}
-            alt="JBA | Mapping and Flood Risk Management"
-          />
+          <Image src={CirkusLogo} alt="Cirkus | Task Management Software" />
           <Image
             class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={CirkusLogo}
-            alt="Cirkus | Task Management Software"
-          />
+          <Image src={BMWLogo} alt="BMWGroup | Automotive Industry" />
           <Image
             class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={BMWLogo}
-            alt="BMWGroup | Automotive Industry"
-          />
           <Image
-            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-            src={StarImage}
-            alt=""
-          />
-          <MarqueeItemComponent
-            imgSrc={PluriaLogo}
+            src={PluriaLogo}
             alt="Pluria | Coworking Management Software"
           />
           <Image
@@ -248,8 +210,8 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
             alt=""
           />
 
-          <MarqueeItemComponent
-            imgSrc={BrightPinkLogo}
+          <Image
+            src={BrightPinkLogo}
             alt="Bright Pink Agency | Marketing Agency"
           />
           <Image
@@ -257,19 +219,8 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
             src={StarImage}
             alt=""
           />
-          <MarqueeItemComponent
-            imgSrc={Go1Logo}
-            alt="Go1 | Learning Platform"
-          />
-          <Image
-            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-            src={StarImage}
-            alt=""
-          />
-          <MarqueeItemComponent
-            imgSrc={JBALogo}
-            alt="JBA | Mapping and Flood Risk Management"
-          />
+
+          <Image src={JBALogo} alt="JBA | Mapping and Flood Risk Management" />
           <Image
             class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
             src={StarImage}
@@ -346,36 +297,6 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
       </div>
       <!-- End About Section -->
 
-      <!-- Start CTA Section -->
-      <div
-        class="mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 text-white"
-      >
-        <div class="container">
-          <div class="row flex items-center">
-            <div class="col-lg-9">
-              <div class="section-title-3 wow animate fadeInUp">
-                <h2
-                  aria-label="We serve as your dedicated SWAT team, enhancing new ideas & existing products into customized, polished, and scalable solutions"
-                >
-                  We serve as your dedicated SWAT team, enhancing new ideas &
-                  existing products into customized, polished, and scalable
-                  solutions
-                </h2>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="banner-btn-group">
-                <a class="primary-btn3 inline-flex" href="#contact"
-                  >Let's Talk
-                  <Image src={ArrowUpIcon} alt="let's talk icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End CTA Section -->
-
       <!-- End Testimonial section -->
       <div class="home4-testimonial-section sec-mar">
         <div class="container">
@@ -428,16 +349,11 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
                   </p>
                 </div>
                 <div class="testimonial-btm">
+                  <div class="review-left">
+                    <img src="assets/img/home-4/trustpilot.svg" alt="" />
+                  </div>
                   <div class="review-right">
-                    <div class="review-right">
-                      <ul class="star">
-                        <li><i class="bi bi-star-fill"></i></li>
-                        <li><i class="bi bi-star-fill"></i></li>
-                        <li><i class="bi bi-star-fill"></i></li>
-                        <li><i class="bi bi-star-fill"></i></li>
-                        <li><i class="bi bi-star-fill"></i></li>
-                      </ul>
-                    </div>
+                    <img src="assets/img/home-4/trastpilot-star.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -477,6 +393,9 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
                   </p>
                 </div>
                 <div class="testimonial-btm">
+                  <div class="review-left">
+                    <img src="assets/img/home-4/google.svg" alt="" />
+                  </div>
                   <div class="review-right">
                     <ul class="star">
                       <li><i class="bi bi-star-fill"></i></li>
@@ -528,14 +447,11 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
                   </p>
                 </div>
                 <div class="testimonial-btm">
+                  <div class="review-left">
+                    <img src="assets/img/home-4/trustpilot.svg" alt="" />
+                  </div>
                   <div class="review-right">
-                    <ul class="star">
-                      <li><i class="bi bi-star-fill"></i></li>
-                      <li><i class="bi bi-star-fill"></i></li>
-                      <li><i class="bi bi-star-fill"></i></li>
-                      <li><i class="bi bi-star-fill"></i></li>
-                      <li><i class="bi bi-star-fill"></i></li>
-                    </ul>
+                    <img src="assets/img/home-4/trastpilot-star.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -579,6 +495,9 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
                   </p>
                 </div>
                 <div class="testimonial-btm">
+                  <div class="review-left">
+                    <img src="assets/img/home-4/google.svg" alt="" />
+                  </div>
                   <div class="review-right">
                     <ul class="star">
                       <li><i class="bi bi-star-fill"></i></li>
@@ -598,7 +517,7 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
 
       <!-- Start Contact section -->
       <div
-        class="mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16   text-white"
+        class="mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 text-white"
       >
         <div class="container">
           <div class="row">
@@ -620,7 +539,8 @@ import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
                           <p class="text-white">
                             You can reach us anytime via <a
                               href="mailto:info@jay-software.com"
-                              >info@jay-software.com</a>
+                              >info@jay-software.com</a
+                            >
                           </p>
                         </div>
                         <div class="contact-form">
