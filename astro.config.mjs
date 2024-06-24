@@ -5,6 +5,7 @@ import sitemap from "@astrojs/sitemap";
 import playformCompress from "@playform/compress";
 import alpinejs from "@astrojs/alpinejs";
 import compressor from "astro-compressor";
+import partytown from '@astrojs/partytown'
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,5 +24,12 @@ export default defineConfig({
     }
   }),
   site: "https://jay-software.com",
-  integrations: [tailwind(), sitemap(), playformCompress(), alpinejs(), compressor()]
+  integrations: [
+    tailwind(), sitemap(), playformCompress(), alpinejs(), compressor(),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"]
+      }
+    })
+  ]
 });
