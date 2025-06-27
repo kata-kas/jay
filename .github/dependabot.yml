@@ -1,0 +1,21 @@
+version: 2
+updates:s
+  - package-ecosystem: "pnpm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "dependencies"
+    assignees:
+      - "kata-kas"
+    target-branch: "main"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+    rebase-strategy: "auto"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore"
+      include: "scope" 
