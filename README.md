@@ -52,4 +52,4 @@ This site is automatically deployed to Vercel when changes are pushed to the mai
 ## 📞 Contact
 
 - Website: [jay-software.com](https://jay-software.com)
-- Email: info@jay-software.com
+- Email: catalin.casuneanu@jay-software.com
