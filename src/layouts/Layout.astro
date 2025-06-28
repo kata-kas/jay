@@ -1,11 +1,67 @@
 ---
 interface Props {
   title: string;
+  description?: string;
+  keywords?: string;
+  canonicalUrl?: string;
+  robots?: string;
 }
 import SpeedInsights from "@vercel/speed-insights/astro";
 import {ViewTransitions} from "astro:transitions";
 import NavComponent from "src/components/NavComponent.astro";
-const { title } = Astro.props;
+import SchemaMarkup from "src/components/SchemaMarkup.astro";
+import BreadcrumbComponent from "src/components/BreadcrumbComponent.astro";
+const { 
+  title, 
+  description = "Custom software development that generates 200-400% ROI. Stop losing $10K+/month to inefficient systems. Get your strategic consultation today.",
+  keywords = "custom software development, business automation, ROI software solutions, digital transformation, process optimization",
+  canonicalUrl = Astro.url.href,
+  robots = "index, follow"
+} = Astro.props;
+
+// Generate breadcrumbs automatically based on URL path
+const pathSegments = Astro.url.pathname.split('/').filter(segment => segment !== '');
+const isHomepage = pathSegments.length === 0;
+
+const breadcrumbItems = [];
+if (!isHomepage) {
+  let currentPath = '';
+  
+  for (let i = 0; i < pathSegments.length; i++) {
+    currentPath += '/' + pathSegments[i];
+    const segment = pathSegments[i];
+    const isLast = i === pathSegments.length - 1;
+    
+    // Generate readable labels
+    let label = segment
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+    
+    // Custom labels for specific paths
+    if (segment === 'services') {
+      label = 'Services';
+      // For services section, link to homepage services section
+      if (!isLast) currentPath = '/#services';
+    }
+    if (segment === 'case-studies') label = 'Case Studies';
+    if (segment === 'ai-ml-solutions') label = 'AI/ML Solutions';
+    if (segment === 'devops-cloud') label = 'DevOps & Cloud';
+    if (segment === 'custom-software-development') label = 'Custom Software Development';
+    if (segment === 'web-applications') label = 'Web Applications';
+    if (segment === 'mobile-applications') label = 'Mobile Applications';
+    if (segment === 'systems-integration') label = 'Systems Integration';
+    if (segment === 'roi-calculator') label = 'ROI Calculator';
+    if (segment === 'automation-guides') label = 'Automation Guides';
+    if (segment === 'performance-studies') label = 'Performance Studies';
+    if (segment === 'revenue-case-studies') label = 'Revenue Case Studies';
+    
+    breadcrumbItems.push({
+      label,
+      href: isLast ? undefined : currentPath
+    });
+  }
+}
 ---
 
 <!doctype html>
@@ -14,22 +70,34 @@ const { title } = Astro.props;
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Jay Software - Custom Software Development" />
+    <meta name="robots" content={robots} />
+    <link rel="canonical" href={canonicalUrl} />
 
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Jay Software - Custom Software Solutions" />
-    <meta property="og:description" content="We specialize in providing custom software solutions tailored to your business needs." />
-    <meta property="og:image" content="/assets/img/jay-logo.svg" />
-    <meta property="og:url" content="https://jay-software.com" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://jay-software.com/assets/img/jay-logo.svg" />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Jay Software" />
 
-      <!-- Twitter Card meta tags -->
-    <meta name="twitter:card" content="/assets/img/jay-logo.svg" />
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@jay-software" />
-    <meta name="twitter:title" content="Jay Software - Custom Software Solutions" />
-    <meta name="twitter:description" content="We specialize in providing custom software solutions tailored to your business needs." />
-    <meta name="twitter:image" content="/assets/img/jay-logo.svg" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://jay-software.com/assets/img/jay-logo.svg" />
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#1e293b" />
+    <meta name="msapplication-TileColor" content="#1e293b" />
 
     <!-- CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -38,9 +106,30 @@ const { title } = Astro.props;
     <link rel="stylesheet" href="/assets/css/preloader.css" />
     <link rel="stylesheet" href="/assets/css/style2.css" />
     
-    <!-- Title -->
-    <title>{title}</title>
-    <meta name="description" content="We specialize in providing custom software solutions tailored to your business needs." />
+    <!-- Global Text Readability Fix -->
+    <style>
+      /* Ensure text is always readable on dark backgrounds */
+      .bg-slate-900 .text-gray-300,
+      .bg-slate-800 .text-gray-300,
+      .bg-gradient-to-br .text-gray-300 {
+        color: rgb(243 244 246) !important; /* text-gray-100 */
+      }
+      
+      /* Better icon stroke width by default */
+      svg[stroke="currentColor"] {
+        stroke-width: 2.5;
+      }
+      
+      /* Ensure minimum text contrast */
+      .text-gray-300 {
+        color: rgb(209 213 219); /* Slightly lighter than default */
+      }
+      
+      .text-gray-200 {
+        color: rgb(243 244 246); /* Force to gray-100 equivalent */
+      }
+    </style>
+    
     <link
       rel="icon"
       href="/assets/img/sm-logo.svg"
@@ -50,70 +139,252 @@ const { title } = Astro.props;
     <link rel="sitemap" href="/sitemap-index.xml" />
     <SpeedInsights />
     <ViewTransitions />
+    
+    <!-- Structured Data -->
+    <SchemaMarkup />
+    
+    <!-- Global Styles -->
+    <style>
+      /* Global text readability fixes */
+      .text-gray-300, .text-gray-200 {
+        color: rgb(243 244 246) !important; /* text-gray-100 */
+      }
+      
+      /* Global icon improvements - standardize all icon sizes with proper padding */
+      svg {
+        stroke-width: 2.5 !important;
+      }
+      
+      /* Add horizontal padding to all small icons */
+      .w-4.h-4 {
+        width: 1.5rem !important; /* Increase from 16px to 24px */
+        height: 1.5rem !important;
+        padding: 0.25rem !important; /* 4px horizontal padding */
+      }
+      
+      .w-5.h-5 {
+        width: 1.75rem !important; /* Increase from 20px to 28px */
+        height: 1.75rem !important;
+        padding: 0.375rem !important; /* 6px horizontal padding */
+      }
+      
+      .w-6.h-6 {
+        width: 2rem !important; /* Increase from 24px to 32px */
+        height: 2rem !important;
+        padding: 0.375rem !important; /* 6px horizontal padding */
+      }
+      
+      .w-7.h-7 {
+        width: 2.25rem !important; /* 36px */
+        height: 2.25rem !important;
+        padding: 0.5rem !important; /* 8px horizontal padding */
+      }
+      
+      .w-8.h-8 {
+        width: 2.5rem !important; /* 40px */
+        height: 2.5rem !important;
+        padding: 0.5rem !important; /* 8px horizontal padding */
+      }
+      
+      /* Ensure good contrast on dark backgrounds */
+      .bg-gray-900 .text-gray-300,
+      .bg-gray-800 .text-gray-300,
+      .bg-gray-900 .text-gray-200,
+      .bg-gray-800 .text-gray-200 {
+        color: rgb(243 244 246) !important;
+      }
+      
+      /* Ensure icons maintain aspect ratio with padding */
+      svg {
+        box-sizing: content-box !important;
+      }
+    </style>
+    
     <!-- Google tag (gtag.js) -->
-    <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-W3WFMSXE22"></script>
+    <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-FEPYNPC6J4"></script>
     <script type="text/partytown">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-W3WFMSXE22');
+      gtag('config', 'G-FEPYNPC6J4');
     </script>
+
+    <!-- HubSpot Tracking Code via Partytown -->
+    <script type="text/partytown" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/146449207.js"></script>
   </head>
   <body class="home-dark2 tt-magic-cursor">
     <NavComponent />
     <!-- End header section -->
+    
+    <!-- Auto-generated Breadcrumbs -->
+    {!isHomepage && (
+      <BreadcrumbComponent items={breadcrumbItems} />
+    )}
+    
     <slot />
-    <!-- Start Footer section -->
-    <footer>
-      <div class="footer-btm">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="footer-btn-content">
-                <div class="copyright-area flex gap-2">
-                  <p>
-                    ©Copyright <span id="copyrightYear"></span> Jay Software
-                  </p>
-                  <p>
-                    <a href="/privacy">Privacy</a>
-                  </p>
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-700">
+      <!-- Final CTA Section - Show on pages without specific CTAs -->
+      {!Astro.url.pathname.startsWith('/services/') && Astro.url.pathname !== '/about' && Astro.url.pathname !== '/case-studies' && (
+      <div class="py-16 bg-gradient-to-r from-blue-900/20 to-purple-900/20 border-b border-slate-700">
+        <div class="container mx-auto px-6">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+              Ready to <span class="text-green-400">10x Your Revenue</span> with Custom Software?
+            </h2>
+            <p class="text-xl text-gray-300 mb-8">
+              Join 50+ businesses that have transformed their operations and increased profits with our solutions.
+            </p>
+            <a href="/#strategic-consultation" 
+               class="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+              Request Strategic Consultation
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      )}
+
+      <!-- Footer Content -->
+      <div class="py-12">
+        <div class="container mx-auto px-6">
+          <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+            <!-- Company Info -->
+            <div class="lg:col-span-1">
+              <div class="flex items-center mb-4">
+                <img src="/assets/img/jay-logo.svg" alt="Jay Software" class="h-8 w-auto" />
+              </div>
+              <p class="text-gray-400 mb-6">
+                Custom software solutions that generate measurable ROI for growing businesses. We don't just build software—we build revenue engines.
+              </p>
+              <div class="flex space-x-4">
+                <a href="https://www.facebook.com/jaysoftwarero/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="Facebook"
+                   class="text-gray-400 hover:text-blue-400 transition-colors">
+                  <i class="bx bxl-facebook text-xl"></i>
+                </a>
+                <a href="https://ro.linkedin.com/company/jaysoftware" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="LinkedIn"
+                   class="text-gray-400 hover:text-blue-400 transition-colors">
+                  <i class="bx bxl-linkedin text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/jay_software/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="Instagram"
+                   class="text-gray-400 hover:text-purple-400 transition-colors">
+                  <i class="bx bxl-instagram text-xl"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Services -->
+            <div>
+              <h3 class="text-white font-semibold text-lg mb-4">Revenue-Generating Services</h3>
+              <ul class="space-y-3">
+                <li><a href="/services/custom-software-development" class="text-gray-400 hover:text-green-400 transition-colors">Custom Software Development</a></li>
+                <li><a href="/services/web-applications" class="text-gray-400 hover:text-green-400 transition-colors">Web Applications</a></li>
+                <li><a href="/services/mobile-applications" class="text-gray-400 hover:text-green-400 transition-colors">Mobile Apps</a></li>
+                <li><a href="/services/systems-integration" class="text-gray-400 hover:text-green-400 transition-colors">Systems Integration</a></li>
+                <li><a href="/services/devops-cloud" class="text-gray-400 hover:text-green-400 transition-colors">DevOps & Cloud</a></li>
+                <li><a href="/services/ai-ml-solutions" class="text-gray-400 hover:text-green-400 transition-colors">AI/ML Solutions</a></li>
+              </ul>
+            </div>
+
+            <!-- Resources -->
+            <div>
+              <h3 class="text-white font-semibold text-lg mb-4">Free Resources</h3>
+              <ul class="space-y-3">
+                <li><a href="/case-studies" class="text-gray-400 hover:text-blue-400 transition-colors">Technical Case Studies</a></li>
+                <li><a href="/resources/revenue-case-studies" class="text-gray-400 hover:text-blue-400 transition-colors">Revenue Case Studies</a></li>
+                <li><a href="/resources/roi-calculator" class="text-gray-400 hover:text-blue-400 transition-colors">ROI Calculator</a></li>
+                <li><a href="/resources/automation-guides" class="text-gray-400 hover:text-blue-400 transition-colors">Automation Guides</a></li>
+                <li><a href="/resources/performance-studies" class="text-gray-400 hover:text-blue-400 transition-colors">Performance Studies</a></li>
+                <li><a href="/#strategic-consultation" class="text-green-400 hover:text-green-300 font-medium transition-colors">Strategic Consultation</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+              <h3 class="text-white font-semibold text-lg mb-4">Get Started Today</h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  </svg>
+                  <a href="mailto:info@jay-software.com" class="text-gray-400 hover:text-white transition-colors">
+                    info@jay-software.com
+                  </a>
                 </div>
-                <div class="footer-social">
-                  <ul>
-                    <li>
-                      <a
-                        href="https://www.facebook.com/jaysoftwarero/"
-                        aria-label="Facebook"
-                        target="_blank"><i class="bx bxl-facebook"></i></a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://ro.linkedin.com/company/jaysoftware"
-                        aria-label="LinkedIn"
-                        target="_blank"><i class="bx bxl-linkedin"></i></a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/jay_software/"
-                        aria-label="Instagram"
-                        target="_blank"><i class="bx bxl-instagram"></i></a
-                      >
-                    </li>
-                  </ul>
+                <div class="bg-slate-800 border border-slate-700 rounded-lg p-4">
+                  <div class="text-sm text-gray-400 mb-1">Consultation Value:</div>
+                  <div class="text-2xl font-bold text-green-400 mb-1">$2,500</div>
+                  <div class="text-sm text-gray-400">Exclusive access</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Footer Bottom -->
+      <div class="py-6 border-t border-slate-700">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="text-gray-400 text-sm mb-4 md:mb-0">
+              ©<span id="copyrightYear"></span> Jay Software. All rights reserved.
+            </div>
+            <div class="flex items-center space-x-6 text-sm">
+              <a href="/privacy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+              <div class="text-gray-400">•</div>
+              <div class="text-gray-400">Built for Revenue Growth</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <!-- End Footer section -->
     <script is:inline>
       var currentYear = new Date().getFullYear();
       document.getElementById("copyrightYear").textContent = currentYear;
+
+      // FAQ Toggle Functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        
+        faqToggles.forEach(toggle => {
+          toggle.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('.faq-icon');
+            
+            // Close all other FAQs
+            faqToggles.forEach(otherToggle => {
+              if (otherToggle !== this) {
+                const otherContent = otherToggle.nextElementSibling;
+                const otherIcon = otherToggle.querySelector('.faq-icon');
+                otherContent.classList.add('hidden');
+                otherIcon.style.transform = 'rotate(0deg)';
+              }
+            });
+            
+            // Toggle current FAQ
+            if (content.classList.contains('hidden')) {
+              content.classList.remove('hidden');
+              icon.style.transform = 'rotate(180deg)';
+            } else {
+              content.classList.add('hidden');
+              icon.style.transform = 'rotate(0deg)';
+            }
+          });
+        });
+      });
     </script>
   </body>
 </html>

@@ -1,7 +1,63 @@
 ---
 ---
-<div class="relative flex overflow-x-hidden">
-    <div class="flex items-center gap-4 animate-marquee whitespace-nowrap h-24">
+
+<div class="marquee-container">
+  <div class="marquee-track">
+    <div class="marquee-content">
+      <slot />
+    </div>
+    <div class="marquee-content" aria-hidden="true">
       <slot />
     </div>
   </div>
+</div>
+
+<style>
+  .marquee-container {
+    @apply w-full overflow-hidden relative;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      white 10%,
+      white 90%,
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      white 10%,
+      white 90%,
+      transparent
+    );
+  }
+
+  .marquee-track {
+    @apply flex;
+    animation: scroll 30s linear infinite;
+  }
+
+  .marquee-content {
+    @apply flex items-center justify-center gap-16 shrink-0;
+    min-width: 100%;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  /* Responsive gap adjustments */
+  @media (max-width: 768px) {
+    .marquee-content {
+      @apply gap-12;
+    }
+  }
+</style>

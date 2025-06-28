@@ -8,96 +8,389 @@ import MobileApplicationsIcon from "assets/img/services/mobile_applications.svg"
 import DevopsIcon from "assets/img/services/devops.svg";
 import AIMLIcon from "assets/img/services/aiml.svg";
 ---
-<section class="text-white">
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-      <div class="mx-auto max-w-lg text-center">
-        <h2 class="text-3xl font-bold sm:text-4xl">Our Software Development Services</h2>
-  
-        <p class="mt-4 text-gray-300">
-            Below, you'll discover a comprehensive list of solutions we offer as your trusted development partner.
-        </p>
+
+<!-- Services Section -->
+<section class="py-20 bg-slate-900">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center bg-blue-600/20 border border-blue-500/30 rounded-full px-4 py-2 text-blue-300 text-sm font-medium mb-6">
+        💰 Revenue-Generating Solutions
       </div>
-  
-      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <a
-          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-          href="#contact"
-        >
-          <Image src={WebApplicationsIcon} alt="Web Applications Development Icon" />
-  
-          <h2 class="mt-4 text-xl font-bold text-white">Web Applications</h2>
-  
-          <p class="mt-1 text-sm text-gray-300">
-            Dynamic web applications designed to enhance user experience and meet business objectives.
-          </p>
-        </a>
-  
-        <a
-          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-          href="#contact"
-        >
-            <Image src={CustomSoftwareIcon} alt="Custom Software Development Icon" />
-          <h2 class="mt-4 text-xl font-bold text-white">Custom Software</h2>
-  
-          <p class="mt-1 text-sm text-gray-300">
-            Deploy your Minimum Viable Product (MVP), streamline
-                        your systems, or elevate your digital product to new
-                        heights. We deliver on time.
-          </p>
-        </a>
-  
-        <a
-          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-          href="#contact"
-        >
-            <Image src={SystemsIntegrationsIcon} alt="Systems Integrations Icon" />
-  
-          <h2 class="mt-4 text-xl font-bold text-white">System integrations</h2>
-  
-          <p class="mt-1 text-sm text-gray-300">
-            Integrate diverse platforms smoothly; achieve unified
-                        operations and enhanced efficiency with us.
-          </p>
-        </a>
-  
-        <a
-          class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-          href="#contact"
-        >
-        <Image src={MobileApplicationsIcon} alt="Mobile Applications Icon" />
-  
-          <h2 class="mt-4 text-xl font-bold text-white">Mobile Solutions</h2>
-  
-          <p class="mt-1 text-sm text-gray-300">
-            Go mobile to better interact with your target audience, automate and optimize daily operations, unlock new revenue streams and make most out of what native or hybrid mobile applications can offer
-          </p>
-        </a>
+      <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+        Software That <span class="text-green-400">Pays for Itself</span> in 6 Months
+      </h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        Every solution we build is designed to generate measurable ROI through automation, efficiency gains, and revenue optimization.
+      </p>
+    </div>
 
-        <a
-        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-        href="#contact"
-        >
-        <Image src={DevopsIcon} alt="Devops Icon" />
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16">
+      <!-- Custom Software Development -->
+      <div class="group bg-slate-800 border border-slate-700 hover:border-blue-500/50 rounded-xl p-8 transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-blue-600/20 rounded-lg flex items-center justify-center group-hover:bg-blue-600/30 transition-colors">
+            <Image src={CustomSoftwareIcon} alt="Custom Software Development" class="w-8 h-8" />
+          </div>
+          <div>
+            <h3 class="text-white text-xl font-semibold">Custom Software Development</h3>
+            <div class="text-green-400 text-sm font-medium">ROI: 200-400%</div>
+          </div>
+        </div>
+        
+        <p class="text-gray-400 mb-6">
+          Eliminate manual processes and boost productivity with software built specifically for your business needs.
+        </p>
+        
+        <div class="space-y-3 mb-6">
+          <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Reduce operational costs by 40-60%</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Automate 80% of repetitive tasks</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Scale without hiring additional staff</span>
+          </div>
+        </div>
+        
+        <div class="bg-slate-700/50 rounded-lg p-4 mb-6">
+          <div class="text-sm text-gray-400 mb-1">Average Client Savings:</div>
+          <div class="text-2xl font-bold text-green-400">$25K+/month</div>
+        </div>
+        
+        <div class="flex items-center justify-between">
+          <a href="/services/custom-software-development" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-colors">
+            Learn More
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="#strategic-consultation" class="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-medium transition-colors">
+            Get Analysis
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-            <h2 class="mt-4 text-xl font-bold text-white">DevOps</h2>
+      <!-- Web Applications -->
+      <div class="group bg-slate-800 border border-slate-700 hover:border-green-500/50 rounded-xl p-8 transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-green-600/20 rounded-lg flex items-center justify-center group-hover:bg-green-600/30 transition-colors">
+            <Image src={WebApplicationsIcon} alt="Web Applications" class="w-8 h-8" />
+          </div>
+          <div>
+            <h3 class="text-white text-xl font-semibold">Revenue-Driving Web Apps</h3>
+            <div class="text-green-400 text-sm font-medium">ROI: 150-300%</div>
+          </div>
+        </div>
+        
+        <p class="text-gray-400 mb-6">
+          Customer portals, e-commerce platforms, and web applications that directly drive revenue growth.
+        </p>
+        
+        <div class="space-y-3 mb-6">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Increase online conversions by 45%</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Reduce customer service load by 60%</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">24/7 automated revenue generation</span>
+          </div>
+        </div>
+        
+        <div class="bg-slate-700/50 rounded-lg p-4 mb-6">
+          <div class="text-sm text-gray-400 mb-1">Average Revenue Increase:</div>
+          <div class="text-2xl font-bold text-green-400">40-80%</div>
+        </div>
+        
+        <div class="flex items-center justify-between">
+          <a href="/services/web-applications" class="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-medium transition-colors">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="#strategic-consultation" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-colors">
+            Get Audit
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-            <p class="mt-1 text-sm text-gray-300">
-                Analysis of the existing release processes and systems, automation, development of systems and tools, and release execution.
-            </p>
-        </a>
+      <!-- Mobile Applications -->
+      <div class="group bg-slate-800 border border-slate-700 hover:border-purple-500/50 rounded-xl p-8 transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-purple-600/20 rounded-lg flex items-center justify-center group-hover:bg-purple-600/30 transition-colors">
+            <Image src={MobileApplicationsIcon} alt="Mobile Applications" class="w-8 h-8" />
+          </div>
+          <div>
+            <h3 class="text-white text-xl font-semibold">Mobile Apps That Sell</h3>
+            <div class="text-green-400 text-sm font-medium">ROI: 180-350%</div>
+          </div>
+        </div>
+        
+        <p class="text-gray-400 mb-6">
+          Customer-facing mobile apps that increase engagement, retention, and lifetime value.
+        </p>
+        
+        <div class="space-y-3 mb-6">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Increase customer engagement by 3x</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Reduce churn rates by 35%</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Open new revenue channels</span>
+          </div>
+        </div>
+        
+        <div class="bg-slate-700/50 rounded-lg p-4 mb-6">
+          <div class="text-sm text-gray-400 mb-1">Avg. Customer LTV Increase:</div>
+          <div class="text-2xl font-bold text-green-400">65%</div>
+        </div>
+        
+        <div class="flex items-center justify-between">
+          <a href="/services/mobile-applications" class="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium transition-colors">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="#strategic-consultation" class="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-medium transition-colors">
+            Get Strategy
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-        <a
-        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-        href="#contact"
-        >
-        <Image src={AIMLIcon} alt="Artificial Intelligence & ML Icon" />
+      <!-- Systems Integration -->
+      <div class="group bg-slate-800 border border-slate-700 hover:border-yellow-500/50 rounded-xl p-8 transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-yellow-600/20 rounded-lg flex items-center justify-center group-hover:bg-yellow-600/30 transition-colors">
+            <Image src={SystemsIntegrationsIcon} alt="Systems Integration" class="w-8 h-8" />
+          </div>
+          <div>
+            <h3 class="text-white text-xl font-semibold">Profit-Maximizing Integration</h3>
+            <div class="text-green-400 text-sm font-medium">ROI: 120-250%</div>
+          </div>
+        </div>
+        
+        <p class="text-gray-400 mb-6">
+          Connect disconnected systems to unlock hidden revenue opportunities and eliminate data silos.
+        </p>
+        
+        <div class="space-y-3 mb-6">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Eliminate manual data entry</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Real-time business insights</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Reduce errors by 90%</span>
+          </div>
+        </div>
+        
+        <div class="bg-slate-700/50 rounded-lg p-4 mb-6">
+          <div class="text-sm text-gray-400 mb-1">Average Time Savings:</div>
+          <div class="text-2xl font-bold text-green-400">20+ hrs/week</div>
+        </div>
+        
+        <div class="flex items-center justify-between">
+          <a href="/services/systems-integration" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 font-medium transition-colors">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="#strategic-consultation" class="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-medium transition-colors">
+            Get Assessment
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-            <h2 class="mt-4 text-xl font-bold text-white">Artificial Intelligence & ML</h2>
+      <!-- DevOps & Cloud -->
+      <div class="group bg-slate-800 border border-slate-700 hover:border-cyan-500/50 rounded-xl p-8 transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-cyan-600/20 rounded-lg flex items-center justify-center group-hover:bg-cyan-600/30 transition-colors">
+            <Image src={DevopsIcon} alt="DevOps & Cloud" class="w-8 h-8" />
+          </div>
+          <div>
+            <h3 class="text-white text-xl font-semibold">Cost-Saving DevOps</h3>
+            <div class="text-green-400 text-sm font-medium">ROI: 160-280%</div>
+          </div>
+        </div>
+        
+        <p class="text-gray-400 mb-6">
+          Optimize infrastructure costs while improving performance, security, and scalability.
+        </p>
+        
+        <div class="space-y-3 mb-6">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Reduce infrastructure costs by 50%</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">99.9% uptime guarantee</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Auto-scaling for growth</span>
+          </div>
+        </div>
+        
+        <div class="bg-slate-700/50 rounded-lg p-4 mb-6">
+          <div class="text-sm text-gray-400 mb-1">Typical Monthly Savings:</div>
+          <div class="text-2xl font-bold text-green-400">$5K-15K</div>
+        </div>
+        
+        <div class="flex items-center justify-between">
+          <a href="/services/devops-cloud" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="#strategic-consultation" class="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-medium transition-colors">
+            Get Audit
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-            <p class="mt-1 text-sm text-gray-300">
-                Leverage the power of AI & ML to make your business smarter and more efficient
-            </p>
+      <!-- AI/ML Solutions -->
+      <div class="group bg-slate-800 border border-slate-700 hover:border-indigo-500/50 rounded-xl p-8 transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-indigo-600/20 rounded-lg flex items-center justify-center group-hover:bg-indigo-600/30 transition-colors">
+            <Image src={AIMLIcon} alt="AI/ML Solutions" class="w-8 h-8" />
+          </div>
+          <div>
+            <h3 class="text-white text-xl font-semibold">Revenue-Boosting AI</h3>
+            <div class="text-green-400 text-sm font-medium">ROI: 300-500%</div>
+          </div>
+        </div>
+        
+        <p class="text-gray-400 mb-6">
+          AI-powered automation and insights that directly impact your bottom line and competitive advantage.
+        </p>
+        
+        <div class="space-y-3 mb-6">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Predictive analytics for sales</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Automated customer service</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-300 text-sm">Intelligent process optimization</span>
+          </div>
+        </div>
+        
+        <div class="bg-slate-700/50 rounded-lg p-4 mb-6">
+          <div class="text-sm text-gray-400 mb-1">Average Profit Increase:</div>
+          <div class="text-2xl font-bold text-green-400">50-150%</div>
+        </div>
+        
+        <div class="flex items-center justify-between">
+          <a href="/services/ai-ml-solutions" class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="#strategic-consultation" class="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-medium transition-colors">
+            Get Analysis
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="text-center">
+      <div class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-2xl p-8 max-w-3xl mx-auto">
+        <h3 class="text-white text-2xl font-bold mb-4">
+          Not Sure Which Solution Will Drive the Most Revenue?
+        </h3>
+        <p class="text-gray-300 mb-6">
+          Our strategic consultation will identify your biggest profit opportunities and show you exactly which solutions will deliver the highest ROI for your business.
+        </p>
+        <a href="#strategic-consultation" 
+           class="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Request Executive Consultation
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
         </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>

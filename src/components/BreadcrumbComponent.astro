@@ -1,0 +1,62 @@
+---
+interface Props {
+  items: Array<{
+    label: string;
+    href?: string;
+  }>;
+}
+
+const { items } = Astro.props;
+---
+
+<nav class="bg-slate-800 border-b border-slate-700 py-4" aria-label="Breadcrumb">
+  <div class="container mx-auto px-6">
+    <ol class="flex items-center space-x-2 text-sm">
+      <li>
+        <a href="/" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L9 5.414V17a1 1 0 102 0V5.414l5.293 5.293a1 1 0 001.414-1.414l-7-7z"/>
+          </svg>
+          Home
+        </a>
+      </li>
+      
+      {items.map((item, index) => (
+        <li class="flex items-center">
+          <svg class="w-4 h-4 text-gray-600 mx-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+          </svg>
+          {item.href ? (
+            <a href={item.href} class="text-gray-400 hover:text-white transition-colors">
+              {item.label}
+            </a>
+          ) : (
+            <span class="text-white font-medium">
+              {item.label}
+            </span>
+          )}
+        </li>
+      ))}
+    </ol>
+  </div>
+</nav>
+
+<!-- Structured Data for Breadcrumbs -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jay-software.com"
+    },
+    ...items.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 2,
+      "name": item.label,
+      "item": item.href ? `https://jay-software.com${item.href}` : undefined
+    }))
+  ]
+})} /> 

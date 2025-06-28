@@ -28,7 +28,7 @@ export default defineConfig({
     tailwind(), sitemap(), playformCompress(), alpinejs(), compressor(),
     partytown({
       config: {
-        forward: ["dataLayer.push"]
+        forward: ["dataLayer.push", "hbspt.forms.create", "hbspt.chat.widget.load", "_hsq.push"]
       }
     })
   ]

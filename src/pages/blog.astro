@@ -1,54 +1,304 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import BlogImage1 from "assets/img/home-3/ilust-grids.webp";
+import BlogImage2 from "assets/img/home-3/ilust-grids2.webp";
+import BlogImage3 from "assets/img/home-3/ilust-grids3.webp";
 ---
 
-<Layout title="Blog | Jay - Software Agency and creative IT solutions">
-    <!-- Start breadcrumbs section -->
-    <section class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb-wrapper">
-                        <div class="breadcrumb-cnt">
-                            <span>New</span>
-                            <h1>The best insights and learnings from the Jay Software team & community.</h1>
-                            <div class="breadcrumb-list">
-                                <a href="/">Home</a> → Blog
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
+<Layout title="Revenue-Generating Software Insights | Jay Software Blog">
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center bg-blue-600/20 border border-blue-500/30 rounded-full px-4 py-2 text-blue-300 text-sm font-medium mb-6">
+          💡 Expert Insights & Case Studies
         </div>
-    </section>
-    <!-- End breadcrumbs section -->
-    <div class="blog-banner sec-mar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="blog-banner-wrap">
-                        <div class="banner-img">
-                            <img src="/assets/img/home-3/ilust-grids.webp" alt="">
-                        </div>
-                       <div class="banner-content">
-                            <h2>Blog</h2>
-                            <p>Join 50,000+ Subscribers</p>
-                            <form>
-                                <div class="form-inner">
-                                    <input type="text" placeholder="Email here...">
-                                    <button type="submit">
-                                        Subscribe
-                                        <svg width="12" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 1H12M12 1V13M12 1L0.5 12"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </form>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h1 class="text-4xl lg:text-6xl font-bold text-white mb-6">
+          Learn How to <span class="text-green-400">10x Your Revenue</span> with Custom Software
+        </h1>
+        <p class="text-xl text-gray-300 mb-8">
+          Real strategies, case studies, and insights from helping 50+ businesses increase their revenue by 40-200% through strategic software development.
+        </p>
+        <a href="#featured-content" 
+           class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Explore Revenue Strategies
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+      </div>
     </div>
+  </section>
+
+  <!-- Featured Content Section -->
+  <section id="featured-content" class="py-20 bg-slate-900">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-white mb-6">
+          Revenue-Generating <span class="text-blue-400">Insights</span>
+        </h2>
+        <p class="text-xl text-gray-300">
+          Learn from our client successes and industry expertise
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16">
+        <!-- Blog Post 1 -->
+        <article class="group bg-slate-800 border border-slate-700 hover:border-blue-500/50 rounded-xl overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-2">
+          <div class="relative">
+            <Image src={BlogImage1} alt="How Custom Software Increased Revenue by 85%" class="w-full h-48 object-cover" />
+            <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+              Case Study
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="text-blue-400 text-sm font-medium mb-2">ROI Analysis • 5 min read</div>
+            <h3 class="text-white text-xl font-semibold mb-3 group-hover:text-blue-400 transition-colors">
+              How We Helped a Manufacturing Company Increase Revenue by 85% in 6 Months
+            </h3>
+            <p class="text-gray-400 mb-4">
+              Discover the exact automation strategy that eliminated 40+ hours of manual work weekly and unlocked $25K in monthly savings for this growing manufacturer.
+            </p>
+            <div class="flex items-center justify-between">
+              <a href="/resources/revenue-case-studies" class="text-blue-400 hover:text-blue-300 font-medium transition-colors">
+                Read Full Case Study →
+              </a>
+              <div class="text-green-400 text-sm font-semibold">+$300K Annual Revenue</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="group bg-slate-800 border border-slate-700 hover:border-green-500/50 rounded-xl overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-2">
+          <div class="relative">
+            <Image src={BlogImage2} alt="5 Hidden Revenue Leaks Software Can Fix" class="w-full h-48 object-cover" />
+            <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+              Revenue Guide
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="text-green-400 text-sm font-medium mb-2">Strategy Guide • 8 min read</div>
+            <h3 class="text-white text-xl font-semibold mb-3 group-hover:text-green-400 transition-colors">
+              5 Hidden Revenue Leaks That Are Costing Your Business $10K+ Monthly
+            </h3>
+            <p class="text-gray-400 mb-4">
+              Most businesses lose significant revenue through these overlooked inefficiencies. Learn how to identify and plug these leaks with strategic software solutions.
+            </p>
+            <div class="flex items-center justify-between">
+              <a href="#revenue-guide" class="text-green-400 hover:text-green-300 font-medium transition-colors">
+                Download Free Guide →
+              </a>
+              <div class="text-green-400 text-sm font-semibold">Free Download</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="group bg-slate-800 border border-slate-700 hover:border-purple-500/50 rounded-xl overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-2">
+          <div class="relative">
+            <Image src={BlogImage3} alt="ROI Calculator for Custom Software" class="w-full h-48 object-cover" />
+            <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+              ROI Tool
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="text-purple-400 text-sm font-medium mb-2">Interactive Tool • 3 min use</div>
+            <h3 class="text-white text-xl font-semibold mb-3 group-hover:text-purple-400 transition-colors">
+              Calculate Your Custom Software ROI: Free Interactive Tool
+            </h3>
+            <p class="text-gray-400 mb-4">
+              Input your current operational costs and see exactly how much revenue you could generate with custom software automation.
+            </p>
+            <div class="flex items-center justify-between">
+              <a href="/resources/roi-calculator" class="text-purple-400 hover:text-purple-300 font-medium transition-colors">
+                Use ROI Calculator →
+              </a>
+              <div class="text-green-400 text-sm font-semibold">Free Tool</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="py-20 bg-slate-800">
+    <div class="container mx-auto px-6">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">
+          Get Weekly Revenue-Boosting Tips
+        </h2>
+        <p class="text-gray-300 mb-8">
+          Join 500+ business owners receiving actionable insights on using technology to increase profits, reduce costs, and scale operations.
+        </p>
+        
+        <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <input 
+            type="email" 
+            placeholder="Your business email" 
+            required
+            class="flex-1 px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button 
+            type="submit"
+            class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 whitespace-nowrap"
+          >
+            Get Free Tips
+          </button>
+        </form>
+        
+        <p class="text-sm text-gray-400 mt-4">
+          ✅ Weekly actionable insights • ✅ No spam • ✅ Unsubscribe anytime
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Articles Section -->
+  <section class="py-20 bg-slate-900">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-white mb-6">
+          More Revenue-Boosting <span class="text-green-400">Strategies</span>
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8 mb-16">
+        <!-- Article 1 -->
+        <article class="bg-slate-800 border border-slate-700 rounded-xl p-8 hover:border-blue-500/50 transition-colors">
+          <div class="flex items-start gap-4">
+            <div class="w-16 h-16 bg-blue-600/20 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <div class="text-blue-400 text-sm font-medium mb-2">Automation Strategy</div>
+              <h3 class="text-white text-xl font-semibold mb-3">
+                The $50K Automation Framework: Step-by-Step Implementation Guide
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Learn our proven 4-phase framework for implementing automation that generates $50K+ in annual savings.
+              </p>
+              <a href="/resources/automation-guides" class="text-blue-400 hover:text-blue-300 font-medium transition-colors">
+                Read Implementation Guide →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="bg-slate-800 border border-slate-700 rounded-xl p-8 hover:border-green-500/50 transition-colors">
+          <div class="flex items-start gap-4">
+            <div class="w-16 h-16 bg-green-600/20 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <div class="text-green-400 text-sm font-medium mb-2">Performance Optimization</div>
+              <h3 class="text-white text-xl font-semibold mb-3">
+                How Poor Software Performance Costs You 30% in Lost Revenue
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Real data on how slow systems impact customer experience, employee productivity, and your bottom line.
+              </p>
+              <a href="/resources/performance-studies" class="text-green-400 hover:text-green-300 font-medium transition-colors">
+                View Performance Study →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="bg-slate-800 border border-slate-700 rounded-xl p-8 hover:border-purple-500/50 transition-colors">
+          <div class="flex items-start gap-4">
+            <div class="w-16 h-16 bg-purple-600/20 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <div class="text-purple-400 text-sm font-medium mb-2">AI/ML Integration</div>
+              <h3 class="text-white text-xl font-semibold mb-3">
+                AI That Actually Pays: 7 Revenue-Generating Use Cases
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Practical AI implementations that directly impact revenue, from predictive analytics to automated customer service.
+              </p>
+              <a href="#ai-use-cases" class="text-purple-400 hover:text-purple-300 font-medium transition-colors">
+                Explore AI Opportunities →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="bg-slate-800 border border-slate-700 rounded-xl p-8 hover:border-yellow-500/50 transition-colors">
+          <div class="flex items-start gap-4">
+            <div class="w-16 h-16 bg-yellow-600/20 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <div class="text-yellow-400 text-sm font-medium mb-2">Cost Reduction</div>
+              <h3 class="text-white text-xl font-semibold mb-3">
+                The Hidden Costs of Manual Processes: $100K+ Annual Impact Study
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Comprehensive analysis of how manual processes drain profits and the ROI of automation investments.
+              </p>
+              <a href="#cost-study" class="text-yellow-400 hover:text-yellow-300 font-medium transition-colors">
+                Download Cost Study →
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-br from-blue-900 via-purple-900 to-slate-900">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+          Ready to Implement These Strategies?
+        </h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Stop reading about revenue growth and start experiencing it. Get your FREE audit to discover which strategies will deliver the biggest ROI for your business.
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-green-400">$2,500</div>
+            <div class="text-sm text-gray-400">Value of FREE Audit</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-blue-400">48 Hours</div>
+            <div class="text-sm text-gray-400">Response Time</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-purple-400">100%</div>
+            <div class="text-sm text-gray-400">Satisfaction Guarantee</div>
+          </div>
+        </div>
+
+        <a href="/#free-audit" 
+           class="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Get My FREE Revenue Audit
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+        
+        <p class="text-sm text-gray-400 mt-4">
+          ⚡ Limited spots available • 📞 15-minute discovery call • 💰 No obligation
+        </p>
+      </div>
+    </div>
+  </section>
 </Layout>

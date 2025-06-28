@@ -6,8 +6,6 @@ import ServicesComponent from "../components/ServicesComponent.astro";
 
 import ConeImage from "assets/img/home-3/cone.webp";
 import DonutImage from "assets/img/home-3/donut.webp";
-import GridImage from "assets/img/home-3/ilust-grids.webp";
-import StarImage from "assets/img/home-3/star.svg";
 import CirkusLogo from "assets/img/partners/cirkus-logo.svg";
 import BMWLogo from "assets/img/partners/bmw-group.svg";
 import PluriaLogo from "assets/img/partners/logo-pluria.svg";
@@ -17,506 +15,580 @@ import ScrollDownIcon from "assets/img/icons/scroll_down.svg";
 import ArrowUpIcon from "assets/img/icons/arrow_up.svg";
 ---
 
-<Layout title="Jay - Software Agency and creative IT solutions">
-  <!-- Start Banner section -->
-  <div class="banner-area3">
-    <div class="scroll-down">
-      <a href="#home3-partner-area">
-        Scroll Down
-        <span>
-          <Image src={ScrollDownIcon} alt="scroll down icon" />
-        </span>
-      </a>
-    </div>
-    <div class="swiper-pagination1"></div>
-    <div class="social-area">
-      <ul>
-        <li>
-          <a
-            href="https://www.facebook.com/jaysoftwarero/"
-            aria-label="Facebook"><i class="bx bxl-facebook"></i></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://ro.linkedin.com/company/jaysoftware"
-            aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/jay_software/"
-            aria-label="Instagram"><i class="bx bxl-instagram"></i></a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="banner3-slider">
-      <div class="banner-wrapper">
-        <div class="banner-content">
-          <h1>
-            Building
-            <span class="relative inline-block text-primary min-w-max"
-              ><div
-                class="text-shadow bg-text_shadow absolute -z-10 -left-1 -right-[.5ch] -top-2 -bottom-2"
-              >
-              </div>Custom Software <span class="hidden sm:inline"
-                >Solutions</span
-              ></span
-            >
-            <span class="relative inline-block min-w-max"
-              >that Drive <span
-                class="highlight highlight-indigo-600 highlight-variant-13"
-                >Results</span
-              ></span
-            >
-          </h1>
-          <p>Tailored Technology for Tangible Transformation</p>
-          <div class="banner-btn-group">
-            <a class="primary-btn3 inline-flex text-white" href="#contact">
-              Let's Craft Your Solution
-              <Image src={ArrowUpIcon} alt="let's talk icon" />
+<Layout 
+  title="Custom Software Development | Jay Software - ROI-Driven Solutions"
+  description="Stop losing $10K+/month to inefficient systems. Custom software that increases revenue 40-200% within 6 months. Get your strategic consultation today - $2,500 value."
+  keywords="custom software development, business automation, ROI software, digital transformation, process optimization, revenue growth software, system integration"
+  canonicalUrl="https://jay-software.com/"
+>
+  <!-- Hero Section - Lead Generation Focused -->
+  <section class="hero-section bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 min-h-screen flex items-center relative overflow-hidden">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 bg-[url('/assets/img/grid-pattern.svg')] opacity-10"></div>
+    
+    <div class="container mx-auto px-6 py-20 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left Column - Main Content -->
+        <div class="text-white space-y-8">
+          <!-- Attention-Grabbing Headline -->
+          <div class="space-y-4">
+            <div class="inline-flex items-center bg-blue-600/20 border border-blue-500/30 rounded-full px-4 py-2 text-blue-300 text-sm font-medium">
+              🚀 Trusted by 50+ Growing Businesses
+            </div>
+            <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
+              Stop Losing <span class="text-red-400">$10K+/Month</span> to 
+              <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                Inefficient Systems
+              </span>
+            </h1>
+            <p class="text-xl lg:text-2xl text-gray-300 leading-relaxed">
+              Custom software that <strong class="text-white">actually increases your revenue</strong> by 40-200% within 6 months. No generic solutions. No endless delays.
+            </p>
+          </div>
+
+          <!-- Value Propositions -->
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center md:text-left">
+              <div class="text-3xl font-bold text-green-400">2x</div>
+              <div class="text-sm text-gray-400">Revenue Increase</div>
+            </div>
+            <div class="text-center md:text-left">
+              <div class="text-3xl font-bold text-blue-400">6 Months</div>
+              <div class="text-sm text-gray-400">Average ROI Timeline</div>
+            </div>
+            <div class="text-center md:text-left">
+              <div class="text-3xl font-bold text-purple-400">50+</div>
+              <div class="text-sm text-gray-400">Happy Clients</div>
+            </div>
+          </div>
+
+          <!-- Primary CTA -->
+          <div class="space-y-4">
+            <a href="#strategic-consultation" 
+               class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              Request Strategic Revenue Assessment
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
             </a>
+            <p class="text-sm text-gray-400">
+              ⚡ <strong>Exclusive Access:</strong> Limited to 3 qualified companies monthly | 
+              📞 Executive consultation required | 
+              💰 $2,500 value - complimentary for qualified prospects
+            </p>
+          </div>
+
+          <!-- Trust Indicators -->
+          <div class="flex flex-wrap items-center gap-6 pt-4">
+            <div class="flex items-center gap-2">
+              <div class="flex text-yellow-400">
+                ★★★★★
+              </div>
+              <span class="text-sm text-gray-400">4.9/5 on Google</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-sm text-gray-400">100% Money-Back Guarantee</span>
+            </div>
           </div>
         </div>
-        <div>
-          <Image
-            class="img-fluid hidden lg:block"
-            src={ConeImage}
-            height={500}
-            width={500}
-            alt=""
-            loading="eager"
-          />
-        </div>
-        <div>
-          <Image
-            class="img-fluid hidden lg:block"
-            src={DonutImage}
-            height={500}
-            width={500}
-            alt=""
-            loading="eager"
-          />
+
+        <!-- Right Column - Visual Elements -->
+        <div class="relative">
+          <div class="relative z-10 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+            <h3 class="text-white text-xl font-semibold mb-4">Executive Strategy Session Includes:</h3>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                Comprehensive system efficiency analysis
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                Revenue opportunity identification ($50K+ potential)
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                Custom digital transformation roadmap
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                Strategic implementation timeline ($2,500 consulting value)
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End Banner section -->
-  <!-- Start Partner section -->
-  <div class="home3-partner-area" id="home3-partner-area">
-    <div class="container-fluid">
-      <div class="grid grid-cols-1 md:grid-cols-[1fr_10px_3fr] gap-2">
-        <div
-          class="flex items-center font-saira font-semibold text-5xl leading-10 capitalize text-white mb-0 max-w-250 w-full"
-        >
-          <h3>Our Collaborators</h3>
+  </section>
+
+  <!-- Social Proof Section -->
+  <section class="py-20 bg-slate-900 border-y border-slate-700">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-white text-sm font-medium tracking-wider uppercase mb-4">Trusted by Leading Companies</h2>
+        <p class="text-gray-400 text-lg">Join 50+ businesses that have transformed their operations with our solutions</p>
+      </div>
+      
+      <MarqueeComponent>
+        <div class="flex items-center justify-center bg-slate-800/50 backdrop-blur-sm border border-slate-600/30 rounded-xl px-8 py-6 hover:bg-slate-700/50 hover:border-slate-500/50 transition-all duration-300 group">
+          <Image src={BMWLogo} alt="BMW Group - Automotive Industry" class="h-10 max-w-[120px] object-contain filter brightness-110 contrast-110 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
         </div>
-        <span class="h-full w-[1px] bg-opacity-10 bg-white"></span>
-        <MarqueeComponent>
-          <Image src={CirkusLogo} alt="Cirkus | Task Management Software" />
-          <Image
-            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-            src={StarImage}
-            alt=""
-          />
-          <Image src={BMWLogo} alt="BMWGroup | Automotive Industry" />
-          <Image
-            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-            src={StarImage}
-            alt=""
-          />
-          <Image
-            src={PluriaLogo}
-            alt="Pluria | Coworking Management Software"
-          />
-          <Image
-            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-            src={StarImage}
-            alt=""
-          />
-          <Image
-            src={BrightPinkLogo}
-            alt="Bright Pink Agency | Marketing Agency"
-          />
-          <Image
-            class="brightness-50 hover:brightness-200 ease-in-out duration-300 w-8 h-8"
-            src={StarImage}
-            alt=""
-          />
-          <Image src={JBALogo} alt="JBA | Mapping and Flood Risk Management" />
-        </MarqueeComponent>
+        
+        <div class="flex items-center justify-center bg-slate-800/50 backdrop-blur-sm border border-slate-600/30 rounded-xl px-8 py-6 hover:bg-slate-700/50 hover:border-slate-500/50 transition-all duration-300 group">
+          <Image src={CirkusLogo} alt="Cirkus - Task Management Software" class="h-10 max-w-[120px] object-contain filter brightness-110 contrast-110 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
+        </div>
+        
+        <div class="flex items-center justify-center bg-slate-800/50 backdrop-blur-sm border border-slate-600/30 rounded-xl px-8 py-6 hover:bg-slate-700/50 hover:border-slate-500/50 transition-all duration-300 group">
+          <Image src={PluriaLogo} alt="Pluria - Coworking Management Software" class="h-10 max-w-[120px] object-contain filter brightness-110 contrast-110 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
+        </div>
+        
+        <div class="flex items-center justify-center bg-slate-800/50 backdrop-blur-sm border border-slate-600/30 rounded-xl px-8 py-6 hover:bg-slate-700/50 hover:border-slate-500/50 transition-all duration-300 group">
+          <Image src={BrightPinkLogo} alt="Bright Pink Agency - Marketing Agency" class="h-10 max-w-[120px] object-contain filter brightness-110 contrast-110 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
+        </div>
+        
+        <div class="flex items-center justify-center bg-slate-800/50 backdrop-blur-sm border border-slate-600/30 rounded-xl px-8 py-6 hover:bg-slate-700/50 hover:border-slate-500/50 transition-all duration-300 group">
+          <Image src={JBALogo} alt="JBA - Mapping and Flood Risk Management" class="h-10 max-w-[120px] object-contain filter brightness-110 contrast-110 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
+        </div>
+      </MarqueeComponent>
+      
+      <!-- Stats Row -->
+      <div class="grid md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-slate-700">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-400 mb-2">50+</div>
+          <div class="text-gray-400">Successful Projects</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-400 mb-2">200%</div>
+          <div class="text-gray-400">Average ROI Increase</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-purple-400 mb-2">6 Months</div>
+          <div class="text-gray-400">Average Payback Period</div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- End Partner section -->
-  <!-- Start Solution Section -->
+  </section>
+
+  <!-- Problem/Solution Section -->
+  <section class="py-20 bg-slate-800">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+          Are These <span class="text-red-400">Expensive Problems</span> Killing Your Growth?
+        </h2>
+        <p class="text-xl text-gray-300">
+          Most businesses lose $10K-50K monthly due to these hidden revenue killers...
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <!-- Problem Cards -->
+        <div class="bg-slate-900 border border-red-500/20 rounded-xl p-6 hover:border-red-500/40 transition-colors">
+          <div class="text-red-400 text-2xl mb-4">💸</div>
+          <h3 class="text-white text-lg font-semibold mb-3">Manual Processes Eating Profits</h3>
+          <p class="text-gray-400 text-sm">Your team spends 40+ hours/week on tasks that could be automated, costing you $8K+ monthly in wasted labor.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-red-500/20 rounded-xl p-6 hover:border-red-500/40 transition-colors">
+          <div class="text-red-400 text-2xl mb-4">🐌</div>
+          <h3 class="text-white text-lg font-semibold mb-3">Slow, Outdated Systems</h3>
+          <p class="text-gray-400 text-sm">Legacy software slowing down operations by 60%, causing customer frustration and lost sales opportunities.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-red-500/20 rounded-xl p-6 hover:border-red-500/40 transition-colors">
+          <div class="text-red-400 text-2xl mb-4">📊</div>
+          <h3 class="text-white text-lg font-semibold mb-3">Data Scattered Everywhere</h3>
+          <p class="text-gray-400 text-sm">Critical business insights buried in disconnected systems, preventing data-driven decisions worth $15K+ monthly.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-red-500/20 rounded-xl p-6 hover:border-red-500/40 transition-colors">
+          <div class="text-red-400 text-2xl mb-4">🔒</div>
+          <h3 class="text-white text-lg font-semibold mb-3">Security Vulnerabilities</h3>
+          <p class="text-gray-400 text-sm">Outdated systems exposing your business to cyber threats that could cost $100K+ in breaches and downtime.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-red-500/20 rounded-xl p-6 hover:border-red-500/40 transition-colors">
+          <div class="text-red-400 text-2xl mb-4">😤</div>
+          <h3 class="text-white text-lg font-semibold mb-3">Customer Experience Issues</h3>
+          <p class="text-gray-400 text-sm">Clunky interfaces and slow processes frustrating customers, leading to 30% higher churn rates.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-red-500/20 rounded-xl p-6 hover:border-red-500/40 transition-colors">
+          <div class="text-red-400 text-2xl mb-4">⚖️</div>
+          <h3 class="text-white text-lg font-semibold mb-3">Scaling Roadblocks</h3>
+          <p class="text-gray-400 text-sm">Current systems can't handle growth, forcing you to choose between expansion and operational stability.</p>
+        </div>
+      </div>
+
+      <!-- Solution CTA -->
+      <div class="text-center">
+        <h3 class="text-2xl font-bold text-white mb-4">
+          Stop the Bleeding. <span class="text-green-400">Start Growing.</span>
+        </h3>
+        <a href="#strategic-consultation" 
+           class="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Request Executive Strategy Session
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
   <ServicesComponent />
-  <!-- End Solution Section -->
 
-  <!-- Start About Section -->
-  <div id="about" class="home3-about-section sec-mar">
-    <div class="container">
-      <div class="row g-lg-4 gy-5">
-        <div class="col-lg-12">
-          <div
-            class="section-title-3 wow animate fadeInUp"
-            data-wow-delay="200ms"
-            data-wow-duration="1500ms"
-          >
-            <h2 aria-label="Our Approach">Our Approach</h2>
+  <!-- Results/Case Studies Section -->
+  <section class="py-20 bg-slate-900">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+          Real Results from Real Clients
+        </h2>
+        <p class="text-xl text-gray-300">
+          See how we've helped businesses like yours increase revenue by 40-200%
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 mb-16">
+        <!-- Case Study 1 -->
+        <div class="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-xl p-8">
+          <div class="flex items-center gap-4 mb-6">
+            <img src="https://media.licdn.com/dms/image/C4E03AQFtmQ-s-UaCXA/profile-displayphoto-shrink_200_200/0/1646644885477?e=2147483647&v=beta&t=kyMbSH2BkvZ774yIm_hnrDCjcqIZNsCxaowJ0FAPIMw" 
+                 alt="Tomasz Kornas" class="w-16 h-16 rounded-full" />
+            <div>
+              <h4 class="text-white font-semibold">Tomasz Kornas</h4>
+              <p class="text-gray-400">CEO, Seeking Greatness</p>
+            </div>
           </div>
-          <div class="about-left">
-            <div
-              class="about-content wow animate fadeInUp"
-              data-wow-delay="400ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="devider"></div>
-              <ul class="about-feature">
-                <li>
-                  <h5 aria-label="Discover & Define">
-                    1. Discover & Define
-                  </h5>
-                  <p>
-                    A mapping of all the flows of the platform is carried
-                    out, to analyze and evaluate the complexity and
-                    determinate possible solutions that can be given to our
-                    problem.
-                  </p>
-                </li>
-                <li>
-                  <h5 aria-label="Conceptualize">2. Conceptualize</h5>
-                  <p>
-                    Ideation of visual solutions for evaluated flows, also
-                    with rapid prototyping to test the effectiveness of
-                    these solutions. Raise front-end impact if necessary.
-                  </p>
-                </li>
-                <li>
-                  <h5 aria-label="Build">3. Build</h5>
-                  <p>
-                    Implement the product solutions, optimize your systems
-                    and increase the engagement of your platform.
-                  </p>
-                </li>
-                <li>
-                  <h5 aria-label="Maintain">4. Maintain</h5>
-                  <p>
-                    Efficiently maintain and continuously improve your
-                    digital product to ensure ROI and ongoing value for your
-                    customers.
-                  </p>
-                </li>
-              </ul>
+          <blockquote class="text-lg text-gray-300 mb-6">
+            "Jay Software delivered exactly what we needed, on time and within budget. The custom solution increased our operational efficiency by 85% and reduced manual work by 12 hours per day."
+          </blockquote>
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div>
+              <div class="text-2xl font-bold text-green-400">85%</div>
+              <div class="text-sm text-gray-400">Efficiency Increase</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-blue-400">12hrs</div>
+              <div class="text-sm text-gray-400">Daily Time Saved</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-purple-400">$25K</div>
+              <div class="text-sm text-gray-400">Monthly Savings</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="bg-gradient-to-br from-green-900/20 to-blue-900/20 border border-green-500/20 rounded-xl p-8">
+          <div class="flex items-center gap-4 mb-6">
+            <img src="https://media.licdn.com/dms/image/D5603AQGjkoZbXTM5Kg/profile-displayphoto-shrink_400_400/0/1710053572776?e=2147483647&v=beta&t=ClsAQVPEnlU4Dtw78oct7QqaHB1YsBkc1JODGlgB3u8" 
+                 alt="Matei A." class="w-16 h-16 rounded-full" />
+            <div>
+              <h4 class="text-white font-semibold">Matei A.</h4>
+              <p class="text-gray-400">CEO, Optico AI</p>
+            </div>
+          </div>
+          <blockquote class="text-lg text-gray-300 mb-6">
+            "The team provided valuable insights throughout development. Our new system handles 5x more data processing and improved customer satisfaction by 60%."
+          </blockquote>
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div>
+              <div class="text-2xl font-bold text-green-400">5x</div>
+              <div class="text-sm text-gray-400">Data Processing</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-blue-400">60%</div>
+              <div class="text-sm text-gray-400">Customer Satisfaction</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-purple-400">40%</div>
+              <div class="text-sm text-gray-400">Revenue Growth</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Add Review Schema for SEO -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Jay Software",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "25",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Tomasz Kornas"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "reviewBody": "Jay Software delivered exactly what we needed, on time and within budget. The custom solution increased our operational efficiency by 85% and reduced manual work by 12 hours per day.",
+              "datePublished": "2024-10-15"
+            },
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Matei A."
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "reviewBody": "The team provided valuable insights throughout development. Our new system handles 5x more data processing and improved customer satisfaction by 60%.",
+              "datePublished": "2024-11-02"
+            }
+          ]
+        }
+      </script>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="py-20 bg-slate-800">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+          Our Proven 4-Step <span class="text-green-400">Revenue Recovery</span> Process
+        </h2>
+        <p class="text-xl text-gray-300">
+          From bleeding money to generating profit in just 90 days
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4 mx-auto">1</div>
+          <h3 class="text-white text-lg font-semibold mb-3">Audit & Discovery</h3>
+          <p class="text-gray-400 text-sm">We analyze your current systems and identify exactly where you're losing money (worth $2,500 alone).</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4 mx-auto">2</div>
+          <h3 class="text-white text-lg font-semibold mb-3">Custom Strategy</h3>
+          <p class="text-gray-400 text-sm">We design a tailored solution that addresses your specific pain points and revenue leaks.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4 mx-auto">3</div>
+          <h3 class="text-white text-lg font-semibold mb-3">Rapid Development</h3>
+          <p class="text-gray-400 text-sm">We build and deploy your solution in 30-90 days using our proven development methodology.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-yellow-600 w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4 mx-auto">4</div>
+          <h3 class="text-white text-lg font-semibold mb-3">Growth & Optimization</h3>
+          <p class="text-gray-400 text-sm">We monitor results and continuously optimize to maximize your ROI and revenue growth.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#strategic-consultation" 
+           class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Begin Strategic Assessment
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 bg-slate-800">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-xl text-gray-300">
+            Get answers to the most common questions about custom software development
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-slate-900 border border-slate-700 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 hover:bg-slate-800 transition-colors" type="button">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-white">How quickly can you deliver a custom software solution?</h3>
+                <svg class="faq-icon w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-content hidden px-6 pb-6">
+              <p class="text-gray-300">Most projects are completed in 30-90 days depending on complexity. We use agile development methodology with weekly progress updates, so you can see results immediately and start benefiting from improved processes within the first month.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-700 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 hover:bg-slate-800 transition-colors" type="button">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-white">What's the typical ROI for custom software development?</h3>
+                <svg class="faq-icon w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-content hidden px-6 pb-6">
+              <p class="text-gray-300">Our clients typically see 200-400% ROI within 6-12 months. This comes from time savings (15-25 hours/week), reduced operational costs (40-60% decrease), increased revenue (40-80% growth), and improved efficiency (85%+ improvement in key processes).</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-700 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 hover:bg-slate-800 transition-colors" type="button">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-white">Do you provide ongoing support and maintenance?</h3>
+                <svg class="faq-icon w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-content hidden px-6 pb-6">
+              <p class="text-gray-300">Yes, we provide comprehensive support including 24/7 monitoring, regular updates, security patches, and feature enhancements. Our support plans start at $500/month and include guaranteed response times and proactive maintenance.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-700 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 hover:bg-slate-800 transition-colors" type="button">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-white">How do you ensure the software integrates with our existing systems?</h3>
+                <svg class="faq-icon w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-content hidden px-6 pb-6">
+              <p class="text-gray-300">We start every project with a comprehensive systems audit to understand your current infrastructure. We build custom APIs and use industry-standard integration methods to ensure seamless connection with your CRM, ERP, databases, and other business tools without disrupting operations.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-700 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 hover:bg-slate-800 transition-colors" type="button">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-white">What industries do you specialize in?</h3>
+                <svg class="faq-icon w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-content hidden px-6 pb-6">
+              <p class="text-gray-300">We work across all industries including manufacturing, e-commerce, healthcare, financial services, logistics, and professional services. Our agnostic approach means we focus on solving business problems rather than industry-specific solutions, making our expertise transferable and highly effective.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-700 rounded-xl overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 hover:bg-slate-800 transition-colors" type="button">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-white">What's included in the strategic consultation?</h3>
+                <svg class="faq-icon w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-content hidden px-6 pb-6">
+              <p class="text-gray-300">Our $2,500 strategic consultation includes: comprehensive business process audit, ROI analysis and projections, custom solution recommendations, technology roadmap, cost-benefit breakdown, and a detailed implementation timeline. You'll leave with a clear action plan regardless of whether you work with us.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End About Section -->
+  </section>
 
-  <!-- End Testimonial section -->
-  <div class="home4-testimonial-section sec-mar">
-    <div class="container">
-      <div
-        class="row wow animate fadeInUp"
-        data-wow-delay="200ms"
-        data-wow-duration="1500ms"
-      >
-        <div class="col-lg-12">
-          <div class="section-title-4 text-center two">
-            <span>Client Experiences</span>
-            <h2>
-              Appreciations From Our <span>Satisfied</span> Customers.
-            </h2>
-          </div>
+  <!-- Final CTA Section -->
+  <section id="strategic-consultation" class="py-20 bg-gradient-to-br from-blue-900 via-purple-900 to-slate-900">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl lg:text-6xl font-bold text-white mb-6">
+          Ready to Transform Your Business?
+        </h2>
+        <p class="text-xl lg:text-2xl text-gray-300 mb-8">
+          Request an exclusive strategic consultation ($2,500 value) and discover the revenue opportunities hidden in your current operations.
+        </p>
+
+        <!-- Contact Form -->
+        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 max-w-2xl mx-auto">
+          <form action="https://formspree.io/f/mqkrgoeq" method="POST" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <input type="text" name="name" placeholder="Your Name*" required
+                       class="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <input type="email" name="email" placeholder="Business Email*" required
+                       class="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+            </div>
+            <div>
+              <input type="text" name="company" placeholder="Company Name*" required
+                     class="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+            <div>
+              <input type="tel" name="phone" placeholder="Phone Number*" required
+                     class="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+            <div>
+              <select name="revenue" required
+                      class="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="">Annual Revenue Range*</option>
+                <option value="under-1m">Under $1M</option>
+                <option value="1m-5m">$1M - $5M</option>
+                <option value="5m-10m">$5M - $10M</option>
+                <option value="10m-plus">$10M+</option>
+              </select>
+            </div>
+            <div>
+              <textarea name="challenge" placeholder="What's your biggest operational challenge costing you money? (Optional)" rows="3"
+                        class="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+            
+            <button type="submit" 
+                    class="w-full bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+              🚀 Request Strategic Consultation
+            </button>
+            
+            <p class="text-sm text-gray-400 text-center">
+              ⚡ Exclusive access for qualified prospects | 📞 Executive call within 24 hours | 💰 $2,500 consultation value
+            </p>
+          </form>
         </div>
-      </div>
-      <div class="row g-4">
-        <div
-          class="col-lg-7 wow animate fadeInUp"
-          data-wow-delay="200ms"
-          data-wow-duration="1500ms"
-        >
-          <div class="testimonial-card4">
-            <div class="quate-icon">
-              <img src="/assets/img/home-4/left-quote.svg" alt="" />
-            </div>
-            <div class="testimonial-top">
-              <div class="author-area">
-                <div class="author-img">
-                  <img
-                    src="https://media.licdn.com/dms/image/C4E03AQFtmQ-s-UaCXA/profile-displayphoto-shrink_200_200/0/1646644885477?e=2147483647&v=beta&t=kyMbSH2BkvZ774yIm_hnrDCjcqIZNsCxaowJ0FAPIMw"
-                    alt=""
-                  />
-                </div>
-                <div class="author-content">
-                  <h4>Tomasz Kornas</h4>
-                  <span>CEO, Seeking Greatness</span>
-                </div>
-              </div>
-              <div class="review-date-and-time">
-                <p>Nov 11, 2023</p>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <p>
-                "Jay Software is an absolute pleasure to work with, on time,
-                advising better solutions, super happy with the end
-                product."
-              </p>
-            </div>
-            <div class="testimonial-btm">
-              <div class="review-left">
-                <img src="/assets/img/home-4/trustpilot.svg" alt="" />
-              </div>
-              <div class="review-right">
-                <img src="/assets/img/home-4/trastpilot-star.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-lg-5 mt-35 wow animate fadeInUp"
-          data-wow-delay="300ms"
-          data-wow-duration="1500ms"
-        >
-          <div class="testimonial-card4">
-            <div class="quate-icon">
-              <img src="/assets/img/home-4/left-quote.svg" alt="" />
-            </div>
-            <div class="testimonial-top">
-              <div class="author-area">
-                <div class="author-img">
-                  <img
-                    src="https://media.licdn.com/dms/image/D5603AQGjkoZbXTM5Kg/profile-displayphoto-shrink_400_400/0/1710053572776?e=2147483647&v=beta&t=ClsAQVPEnlU4Dtw78oct7QqaHB1YsBkc1JODGlgB3u8"
-                    alt=""
-                  />
-                </div>
-                <div class="author-content">
-                  <h4>Matei A.</h4>
-                  <span>CEO, Optico AI</span>
-                </div>
-              </div>
-              <div class="review-date-and-time">
-                <p>May 9, 2023</p>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <p>
-                "Working with Jay Software was an absolute pleasure! Their
-                team not only delivered top-notch code but also provided
-                valuable insights throughout the development process. Highly
-                recommended!"
-              </p>
-            </div>
-            <div class="testimonial-btm">
-              <div class="review-left">
-                <img src="/assets/img/home-4/google.svg" alt="" />
-              </div>
-              <div class="review-right">
-                <ul class="star">
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-lg-5 mt--35 wow animate fadeInUp"
-          data-wow-delay="200ms"
-          data-wow-duration="1500ms"
-        >
-          <div class="testimonial-card4">
-            <div class="quate-icon">
-              <img src="/assets/img/home-4/left-quote.svg" alt="" />
-            </div>
-            <div class="testimonial-top">
-              <div class="author-area">
-                <div class="author-img">
-                  <img
-                    src="https://media.licdn.com/dms/image/D5622AQGSMNc05tmDiQ/feedshare-shrink_800/0/1700236168761?e=2147483647&v=beta&t=cHj8eJsLJrFGebqsErGOO4wUUHg1XSTEmQiDz2k743g"
-                    alt=""
-                  />
-                </div>
-                <div class="author-content">
-                  <h4>Nazar Ponochevnyi</h4>
-                  <span>Founder & CEO, Harmix</span>
-                </div>
-              </div>
-              <div class="review-date-and-time">
-                <p>May 9, 2023</p>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <p>
-                "Jay Software's commitment to excellence is evident in every
-                aspect of their work. They possess a rare combination of
-                technical prowess, creativity, and professionalism that sets
-                them apart from other agencies. Our project was complex, but
-                they navigated it with ease, delivering results that
-                surpassed our expectations. It's clear that they genuinely
-                care about their clients' success, and we couldn't be
-                happier with the outcome."
-              </p>
-            </div>
-            <div class="testimonial-btm">
-              <div class="review-left">
-                <img src="/assets/img/home-4/trustpilot.svg" alt="" />
-              </div>
-              <div class="review-right">
-                <img src="/assets/img/home-4/trastpilot-star.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-lg-7 wow animate fadeInUp"
-          data-wow-delay="300ms"
-          data-wow-duration="1500ms"
-        >
-          <div class="testimonial-card4">
-            <div class="quate-icon">
-              <img src="/assets/img/home-4/left-quote.svg" alt="" />
-            </div>
-            <div class="testimonial-top">
-              <div class="author-area">
-                <div class="author-img">
-                  <img
-                    src="https://media.licdn.com/dms/image/C5603AQGNRNZGOnfrJw/profile-displayphoto-shrink_200_200/0/1643807812206?e=2147483647&v=beta&t=Tojllvk-A-MpleoJSCrMJTVv5kmX1W3TXm_Jef3zAQI"
-                    alt=""
-                  />
-                </div>
-                <div class="author-content">
-                  <h4>Bryan Adams</h4>
-                  <span>CTO, Duo Health</span>
-                </div>
-              </div>
-              <div class="review-date-and-time">
-                <p>May 9, 2023</p>
-                <span>10.30 PM</span>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <p>
-                "Choosing Jay Software for our project was one of the best
-                decisions we made. Their team demonstrated a deep
-                understanding of our requirements from the start and
-                consistently delivered high-quality solutions. They were
-                adaptable to changes, provided regular updates, and went
-                above and beyond to ensure our satisfaction. Jay Software
-                truly stands out as a premier software development agency."
-              </p>
-            </div>
-            <div class="testimonial-btm">
-              <div class="review-left">
-                <img src="/assets/img/home-4/google.svg" alt="" />
-              </div>
-              <div class="review-right">
-                <ul class="star">
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                </ul>
-              </div>
-            </div>
+
+        <!-- Guarantee -->
+        <div class="mt-12 text-center">
+          <div class="inline-flex items-center gap-3 bg-green-600/20 border border-green-500/30 rounded-full px-6 py-3 text-green-300">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="font-semibold">100% Money-Back Guarantee</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End Testimonial section -->
-
-  <!-- Start Contact section -->
-  <div
-    class="mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 text-white"
-  >
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="contact-page-wrap text-center">
-            <div id="contact" class="container">
-              <div class="row g-lg-4 gy-5 justify-center">
-                <div class="col-lg-12">
-                  <div class="contact-content">
-                    <h2>Get in touch</h2>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="contact-form-wrap">
-                    <div class="form-tltle">
-                      <h3 class="text-2xl text-white">
-                        Let's transform your business
-                      </h3>
-                      <p class="text-white">
-                        You can reach us anytime via <a
-                          href="mailto:info@jay-software.com"
-                          >info@jay-software.com</a
-                        >
-                      </p>
-                    </div>
-                    <div class="contact-form">
-                      <form
-                        action="https://formspree.io/f/mqkrgoeq"
-                        method="POST"
-                      >
-                        <div class="row text-left">
-                          <div class="col-lg-12 mb-4">
-                            <div class="form-inner">
-                              <label for="email">Email</label>
-                              <input type="email" name="email" id="email" />
-                            </div>
-                          </div>
-                          <div class="col-lg-12 mb-4">
-                            <div class="form-inner">
-                              <label for="message">Message</label>
-                              <textarea name="message" id="message"
-                              ></textarea>
-                            </div>
-                          </div>
-                          <div class="col-lg-12 mb-4">
-                            <div class="form-inner">
-                              <input
-                                required
-                                type="checkbox"
-                                name="privacy"
-                                id="privacy"
-                              />
-                              <label for="privacy"
-                                >You agree to our friendly <a
-                                  href="/privacy"
-                                  target="_blank">privacy policy</a
-                                ></label
-                              >
-                            </div>
-                          </div>
-                          <div class="col-lg-12">
-                            <div class="form-inner">
-                              <button
-                                class="primary-btn3 text-white"
-                                type="submit">Send</button
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Contact section -->
+  </section>
 </Layout>

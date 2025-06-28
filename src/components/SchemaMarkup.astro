@@ -1,0 +1,159 @@
+---
+interface Props {
+  type?: 'organization' | 'service' | 'article' | 'software' | 'reviews';
+  data?: any;
+}
+
+const { type = 'organization', data = {} } = Astro.props;
+
+// Base organization schema
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Jay Software",
+  "description": "Custom software development company specializing in ROI-driven business solutions",
+  "url": "https://jay-software.com",
+  "logo": "https://jay-software.com/assets/img/jay-logo.svg",
+  "foundingDate": "2020",
+  "numberOfEmployees": "10-50",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Piata Avram Iancu 12, Ap. 3",
+    "addressLocality": "Arad",
+    "postalCode": "310123",
+    "addressCountry": "RO"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "",
+    "email": "info@jay-software.com",
+    "contactType": "customer service",
+    "availableLanguage": ["English", "Romanian"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/jaysoftwarero/",
+    "https://ro.linkedin.com/company/jaysoftware",
+    "https://www.instagram.com/jay_software/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Software Development Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Custom Software Development",
+          "description": "Bespoke software solutions that generate 200-400% ROI"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Web Application Development",
+          "description": "Scalable web applications for business growth"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mobile Application Development",
+          "description": "Native and cross-platform mobile apps"
+        }
+      }
+    ]
+  }
+};
+
+// Service schema template
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "provider": {
+    "@type": "Organization",
+    "name": "Jay Software",
+    "url": "https://jay-software.com"
+  },
+  "serviceType": "Software Development",
+  "areaServed": "Worldwide",
+  ...data
+};
+
+// Software Application schema
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Custom Software Solutions",
+  "operatingSystem": "Cross-platform",
+  "applicationCategory": "BusinessApplication",
+  "author": {
+    "@type": "Organization",
+    "name": "Jay Software"
+  },
+  ...data
+};
+
+// Reviews schema with testimonials
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Jay Software",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Tomasz Kornas"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Jay Software delivered exactly what we needed, on time and within budget. The custom solution increased our operational efficiency by 85% and reduced manual work by 12 hours per day.",
+      "datePublished": "2024-10-15"
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Matei A."
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "The team provided valuable insights throughout development. Our new system handles 5x more data processing and improved customer satisfaction by 60%.",
+      "datePublished": "2024-11-02"
+    }
+  ],
+  ...data
+};
+
+let schema;
+switch (type) {
+  case 'service':
+    schema = serviceSchema;
+    break;
+  case 'software':
+    schema = softwareSchema;
+    break;
+  case 'reviews':
+    schema = reviewSchema;
+    break;
+  default:
+    schema = organizationSchema;
+}
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script> 

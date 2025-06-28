@@ -1,0 +1,529 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Automation Guides | Jay Software - Business Process Automation">
+  <main class="min-h-screen bg-slate-900">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-purple-900/20 to-violet-900/20 border-b border-slate-700">
+      <div class="container mx-auto px-6 py-20">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="inline-flex items-center gap-2 bg-purple-600/20 border border-purple-500/30 rounded-full px-4 py-2 text-purple-300 text-sm font-medium mb-6">
+            🤖 Automation Guides
+          </div>
+          <h1 class="text-4xl lg:text-6xl font-bold text-white mb-6">
+            Master Business
+            <span class="bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent">
+              Process Automation
+            </span>
+          </h1>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            Learn proven automation frameworks and strategies that successful businesses use to eliminate manual work, reduce errors, and scale operations without adding headcount.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="py-12 bg-slate-800 sticky top-0 z-10">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#automation-assessment" class="bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors">Automation Assessment</a>
+          <a href="#frameworks" class="bg-slate-700 hover:bg-slate-600 text-gray-300 px-4 py-2 rounded-lg font-medium transition-colors">Frameworks</a>
+          <a href="#implementation" class="bg-slate-700 hover:bg-slate-600 text-gray-300 px-4 py-2 rounded-lg font-medium transition-colors">Implementation</a>
+          <a href="#case-studies" class="bg-slate-700 hover:bg-slate-600 text-gray-300 px-4 py-2 rounded-lg font-medium transition-colors">Case Studies</a>
+          <a href="#tools" class="bg-slate-700 hover:bg-slate-600 text-gray-300 px-4 py-2 rounded-lg font-medium transition-colors">Tools & Tech</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Automation Assessment -->
+    <section id="automation-assessment" class="py-20 bg-slate-900">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-white mb-12 text-center">Automation Readiness Assessment</h2>
+          
+          <div class="bg-slate-800 border border-slate-700 rounded-xl p-8">
+            <h3 class="text-xl font-bold text-purple-400 mb-6">Which Processes Should You Automate First?</h3>
+            
+            <div class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-green-500/10 border border-green-500/20 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-green-400 mb-4">High-Impact Automation Targets</h4>
+                  <ul class="space-y-3 text-sm text-gray-300">
+                    <li class="flex items-start gap-3">
+                      <svg class="w-5 h-5 text-green-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                      <span><strong>Data Entry:</strong> Forms, invoices, order processing</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <svg class="w-5 h-5 text-green-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                      <span><strong>Report Generation:</strong> Daily/weekly/monthly reports</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <svg class="w-5 h-5 text-green-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                      <span><strong>Customer Communications:</strong> Follow-ups, notifications</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <svg class="w-5 h-5 text-green-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7-293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                      <span><strong>Inventory Management:</strong> Reordering, tracking</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-amber-400 mb-4">Automation ROI Calculator</h4>
+                  <div class="space-y-4">
+                    <div>
+                      <label class="block text-white text-sm font-medium mb-2">Hours per week on manual tasks:</label>
+                      <input type="number" id="manual-hours-guide" value="20" min="1" max="80" 
+                             class="w-full bg-slate-700 text-white border border-slate-600 rounded-lg px-3 py-2 text-sm">
+                    </div>
+                    <div>
+                      <label class="block text-white text-sm font-medium mb-2">Average hourly cost:</label>
+                      <input type="number" id="hourly-cost-guide" value="35" min="15" max="200" 
+                             class="w-full bg-slate-700 text-white border border-slate-600 rounded-lg px-3 py-2 text-sm">
+                    </div>
+                    <div class="pt-4 border-t border-slate-600">
+                      <div class="text-center">
+                        <div class="text-2xl font-bold text-amber-400" id="potential-savings">$36,400</div>
+                        <div class="text-sm text-gray-300">Annual savings potential</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Automation Frameworks -->
+    <section id="frameworks" class="py-20 bg-slate-800">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-white mb-12 text-center">Proven Automation Frameworks</h2>
+          
+          <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Framework 1: LEAN -->
+            <div class="bg-slate-900 border border-slate-700 rounded-xl p-8">
+              <div class="bg-blue-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-4">LEAN Automation Framework</h3>
+              <p class="text-gray-300 text-sm mb-6">Eliminate waste, optimize value streams, and automate only what adds real value to your customers.</p>
+              
+              <div class="space-y-4">
+                <div class="bg-slate-700/50 p-4 rounded-lg">
+                  <h4 class="text-blue-400 font-semibold mb-2">1. Value Stream Mapping</h4>
+                  <p class="text-gray-300 text-sm">Identify every step in your process, map the current state, and spot automation opportunities.</p>
+                </div>
+                <div class="bg-slate-700/50 p-4 rounded-lg">
+                  <h4 class="text-blue-400 font-semibold mb-2">2. Waste Elimination</h4>
+                  <p class="text-gray-300 text-sm">Remove unnecessary steps before automating. Don't automate broken processes.</p>
+                </div>
+                <div class="bg-slate-700/50 p-4 rounded-lg">
+                  <h4 class="text-blue-400 font-semibold mb-2">3. Continuous Improvement</h4>
+                  <p class="text-gray-300 text-sm">Implement automation in small batches, measure results, and iterate.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Framework 2: RPA -->
+            <div class="bg-slate-900 border border-slate-700 rounded-xl p-8">
+              <div class="bg-green-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-4">RPA Implementation</h3>
+              <p class="text-gray-300 text-sm mb-6">Robotic Process Automation for rule-based, repetitive tasks that follow predictable patterns.</p>
+              
+              <div class="space-y-4">
+                <div class="bg-slate-700/50 p-4 rounded-lg">
+                  <h4 class="text-green-400 font-semibold mb-2">1. Process Discovery</h4>
+                  <p class="text-gray-300 text-sm">Identify high-volume, rule-based processes perfect for RPA implementation.</p>
+                </div>
+                <div class="bg-slate-700/50 p-4 rounded-lg">
+                  <h4 class="text-green-400 font-semibold mb-2">2. Bot Development</h4>
+                  <p class="text-gray-300 text-sm">Create software robots that mimic human actions across multiple systems.</p>
+                </div>
+                <div class="bg-slate-700/50 p-4 rounded-lg">
+                  <h4 class="text-green-400 font-semibold mb-2">3. Exception Handling</h4>
+                  <p class="text-gray-300 text-sm">Build robust error handling and human escalation workflows.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Framework 3: AI-Powered -->
+            <div class="bg-slate-900 border border-slate-700 rounded-xl p-8">
+              <div class="bg-purple-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-4">AI-Powered Automation</h3>
+              <p class="text-gray-300 text-sm mb-6">Intelligent automation that learns, adapts, and handles complex decision-making processes.</p>
+              
+              <div class="space-y-4">
+                <div class="bg-slate-700/50 p-4 rounded-lg">
+                  <h4 class="text-purple-400 font-semibold mb-2">1. Machine Learning Models</h4>
+                  <p class="text-gray-300 text-sm">Train models on your data to automate complex classification and prediction tasks.</p>
+                </div>
+                <div class="bg-slate-700/50 p-4 rounded-lg">
+                  <h4 class="text-purple-400 font-semibold mb-2">2. Natural Language Processing</h4>
+                  <p class="text-gray-300 text-sm">Automate document processing, email classification, and customer service.</p>
+                </div>
+                <div class="bg-slate-700/50 p-4 rounded-lg">
+                  <h4 class="text-purple-400 font-semibold mb-2">3. Predictive Analytics</h4>
+                  <p class="text-gray-300 text-sm">Automate forecasting, risk assessment, and proactive decision making.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Implementation Guide -->
+    <section id="implementation" class="py-20 bg-slate-900">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-white mb-12 text-center">Implementation Roadmap</h2>
+          
+          <div class="space-y-8">
+            <!-- Phase 1 -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-8">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
+                <h3 class="text-xl font-bold text-white">Discovery & Assessment (Week 1-2)</h3>
+              </div>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="text-blue-400 font-semibold mb-3">Process Audit</h4>
+                  <ul class="space-y-2 text-sm text-gray-300">
+                    <li>• Document current workflows</li>
+                    <li>• Identify bottlenecks and pain points</li>
+                    <li>• Calculate time spent on manual tasks</li>
+                    <li>• Map data flows and system dependencies</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-blue-400 font-semibold mb-3">ROI Analysis</h4>
+                  <ul class="space-y-2 text-sm text-gray-300">
+                    <li>• Quantify potential savings</li>
+                    <li>• Estimate implementation costs</li>
+                    <li>• Priority ranking of automation opportunities</li>
+                    <li>• Risk assessment and mitigation strategies</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-8">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
+                <h3 class="text-xl font-bold text-white">Design & Architecture (Week 3-4)</h3>
+              </div>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="text-green-400 font-semibold mb-3">Solution Design</h4>
+                  <ul class="space-y-2 text-sm text-gray-300">
+                    <li>• Create automation blueprints</li>
+                    <li>• Design user interfaces and workflows</li>
+                    <li>• Plan data integration strategies</li>
+                    <li>• Define success metrics and KPIs</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-green-400 font-semibold mb-3">Technical Planning</h4>
+                  <ul class="space-y-2 text-sm text-gray-300">
+                    <li>• Choose automation technology stack</li>
+                    <li>• Plan system integrations</li>
+                    <li>• Design security and compliance measures</li>
+                    <li>• Create implementation timeline</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-8">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="bg-purple-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
+                <h3 class="text-xl font-bold text-white">Development & Testing (Week 5-8)</h3>
+              </div>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="text-purple-400 font-semibold mb-3">Development</h4>
+                  <ul class="space-y-2 text-sm text-gray-300">
+                    <li>• Build automation workflows</li>
+                    <li>• Develop custom integrations</li>
+                    <li>• Create user interfaces</li>
+                    <li>• Implement monitoring and logging</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-purple-400 font-semibold mb-3">Testing</h4>
+                  <ul class="space-y-2 text-sm text-gray-300">
+                    <li>• Unit and integration testing</li>
+                    <li>• User acceptance testing</li>
+                    <li>• Performance and load testing</li>
+                    <li>• Security vulnerability assessment</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-8">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="bg-amber-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</div>
+                <h3 class="text-xl font-bold text-white">Deployment & Optimization (Week 9-12)</h3>
+              </div>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="text-amber-400 font-semibold mb-3">Go-Live</h4>
+                  <ul class="space-y-2 text-sm text-gray-300">
+                    <li>• Phased rollout strategy</li>
+                    <li>• User training and documentation</li>
+                    <li>• Support and maintenance setup</li>
+                    <li>• Performance monitoring</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-amber-400 font-semibold mb-3">Optimization</h4>
+                  <ul class="space-y-2 text-sm text-gray-300">
+                    <li>• Performance tuning</li>
+                    <li>• User feedback incorporation</li>
+                    <li>• Additional automation opportunities</li>
+                    <li>• ROI measurement and reporting</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Automation Case Studies -->
+    <section id="case-studies" class="py-20 bg-slate-800">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-white mb-12 text-center">Automation Success Stories</h2>
+          
+          <div class="grid lg:grid-cols-2 gap-8">
+            <!-- Case Study 1 -->
+            <div class="bg-slate-900 border border-slate-700 rounded-xl p-8">
+              <div class="flex items-center gap-3 mb-6">
+                <div class="bg-blue-500/20 px-3 py-1 rounded-full text-blue-400 text-sm font-medium">Manufacturing</div>
+                <div class="text-gray-400 text-sm">6 Month Implementation</div>
+              </div>
+              
+              <h3 class="text-xl font-bold text-white mb-4">Automated Inventory Management</h3>
+              <p class="text-gray-300 text-sm mb-6">Automated reordering, demand forecasting, and supplier management for a mid-size manufacturer.</p>
+              
+              <div class="grid grid-cols-3 gap-4 mb-6">
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-blue-400">85%</div>
+                  <div class="text-xs text-gray-400">Time Reduction</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-green-400">$180K</div>
+                  <div class="text-xs text-gray-400">Annual Savings</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-purple-400">40%</div>
+                  <div class="text-xs text-gray-400">Fewer Stockouts</div>
+                </div>
+              </div>
+              
+              <blockquote class="bg-slate-700/50 p-4 rounded-lg border-l-4 border-blue-400">
+                <p class="text-gray-300 text-sm italic">"We went from spending 30 hours a week managing inventory to just monitoring reports. The system handles 95% of reordering decisions automatically."</p>
+              </blockquote>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="bg-slate-900 border border-slate-700 rounded-xl p-8">
+              <div class="flex items-center gap-3 mb-6">
+                <div class="bg-green-500/20 px-3 py-1 rounded-full text-green-400 text-sm font-medium">Healthcare</div>
+                <div class="text-gray-400 text-sm">4 Month Implementation</div>
+              </div>
+              
+              <h3 class="text-xl font-bold text-white mb-4">Patient Communication Automation</h3>
+              <p class="text-gray-300 text-sm mb-6">Automated appointment reminders, follow-ups, and prescription refill notifications.</p>
+              
+              <div class="grid grid-cols-3 gap-4 mb-6">
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-green-400">60%</div>
+                  <div class="text-xs text-gray-400">Fewer No-Shows</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-blue-400">95%</div>
+                  <div class="text-xs text-gray-400">Patient Satisfaction</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-purple-400">25 hrs</div>
+                  <div class="text-xs text-gray-400">Weekly Time Saved</div>
+                </div>
+              </div>
+              
+              <blockquote class="bg-slate-700/50 p-4 rounded-lg border-l-4 border-green-400">
+                <p class="text-gray-300 text-sm italic">"Patient satisfaction scores increased dramatically. They love the convenient automated reminders and our staff can focus on care instead of phone calls."</p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools & Technologies -->
+    <section id="tools" class="py-20 bg-slate-900">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-white mb-12 text-center">Automation Tools & Technologies</h2>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Low-Code Platforms -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-8">
+              <h3 class="text-xl font-bold text-white mb-6">Low-Code Platforms</h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">Microsoft Power Automate</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">Zapier</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">UiPath</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-amber-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">Automation Anywhere</span>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm mt-6">Perfect for quick wins and non-technical users. Great for simple workflows and integrations.</p>
+            </div>
+
+            <!-- Custom Development -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-8">
+              <h3 class="text-xl font-bold text-white mb-6">Custom Development</h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">Python + Django/Flask</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">Node.js + Express</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">.NET Core</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-amber-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">React/Vue.js</span>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm mt-6">Maximum flexibility and customization. Best for complex business logic and unique requirements.</p>
+            </div>
+
+            <!-- AI/ML Tools -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-8">
+              <h3 class="text-xl font-bold text-white mb-6">AI/ML Integration</h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">TensorFlow/PyTorch</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">OpenAI GPT APIs</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">Azure Cognitive Services</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 bg-amber-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">AWS Machine Learning</span>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm mt-6">Intelligent automation that learns and adapts. Ideal for complex decision-making processes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-purple-900/20 to-violet-900/20">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+            Ready to <span class="text-purple-400">Automate Your Business</span>?
+          </h2>
+          <p class="text-xl text-gray-300 mb-8">
+            Stop losing time on manual tasks. Let's build automation systems that scale your business without scaling your headcount.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/#strategic-consultation" 
+               class="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+              Get Automation Roadmap
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+            <a href="/resources/roi-calculator" 
+               class="inline-flex items-center gap-3 bg-slate-700 hover:bg-slate-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+              Calculate ROI
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Simple calculator for the automation assessment
+    function updateSavings() {
+      const hours = parseFloat(document.getElementById('manual-hours-guide').value) || 0;
+      const cost = parseFloat(document.getElementById('hourly-cost-guide').value) || 0;
+      const weeklySavings = hours * cost * 0.8; // 80% automation
+      const annualSavings = weeklySavings * 52;
+      
+      document.getElementById('potential-savings').textContent = '$' + annualSavings.toLocaleString();
+    }
+
+    // Add event listeners
+    document.getElementById('manual-hours-guide').addEventListener('input', updateSavings);
+    document.getElementById('hourly-cost-guide').addEventListener('input', updateSavings);
+
+    // Initial calculation
+    updateSavings();
+  </script>
+</Layout> 
